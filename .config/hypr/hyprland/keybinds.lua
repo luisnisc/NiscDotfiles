@@ -11,6 +11,7 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind("CTRL + ALT + RETURN", hl.dsp.exec_cmd(vars.menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
@@ -45,7 +46,7 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true 
 
 
 
-hl.bind(vars.mainMod .. "+ W", hl.dsp.exec_cmd("uwsm app -- waypaper 2>/dev/null || waypaper"))
+hl.bind(vars.mainMod .. "+ W", hl.dsp.exec_cmd("waypaper"))
 hl.bind(vars.kbBrowser, hl.dsp.exec_cmd(vars.browser))
 hl.bind(vars.kbCrunchyroll, hl.dsp.exec_cmd(vars.crunchyroll))
 hl.bind(vars.kbYoutube, hl.dsp.exec_cmd(vars.youtube))
