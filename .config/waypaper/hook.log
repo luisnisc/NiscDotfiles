@@ -1,0 +1,15 @@
+[sáb 08 ago 2026 18:34:07 CEST] Procesando fondo: /mnt/Datos/Wallpapers/anime-water.png
+[sáb 08 ago 2026 18:34:07 CEST] Fondo procesado y sincronizado con SDDM.
+[sáb 08 ago 2026 18:34:08 CEST] Detectado fondo OSCURO (Mediana: 0.586807)
+[sáb 08 ago 2026 18:34:08 CEST] Generando paleta con Matugen (Modo: dark)...
+Error: 
+   0: [91mFailed to get source color.[0m
+   1: [91mCould not get source color from image: /tmp/current_wallpaper.png[0m
+   2: [91mIO error: not a terminal[0m
+
+Backtrace omitted. Run with RUST_BACKTRACE=1 environment variable to display it.
+Run with RUST_BACKTRACE=full to include source snippets.
+[sáb 08 ago 2026 18:34:08 CEST] ADVERTENCIA: Matugen rechazó la imagen. Calculando color de contingencia...
+[sáb 08 ago 2026 18:34:09 CEST] Inyectando color representativo extraído: #635B8D
+ok
+[sáb 08 ago 2026 18:34:09 CEST] Sincronización completada con éxito.

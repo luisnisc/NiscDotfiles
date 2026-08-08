@@ -1,0 +1,95 @@
+@import "colors-waybar.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: @foreground;
+}
+
+/* --- MÓDULOS EN CÁPSULAS --- */
+/* Inyectamos custom-mediaplayer aquí para heredar el diseño exacto del resto del panel */
+#workspaces,
+#clock,
+#cpu,
+#memory,
+#pulseaudio,
+#network,
+#custom-gpu-temp,
+#bluetooth,
+#tray,
+#custom-mediaplayer {
+    background-color: alpha(@background-alt, 0.85);
+    padding: 4px 12px;
+    margin: 6px 3px;
+    border-radius: 10px;
+    border: 1px solid alpha(@border, 0.3);
+}
+
+/* --- WORKSPACES --- */
+#workspaces button {
+    padding: 0 5px;
+    color: @foreground;
+    background: transparent;
+    border-radius: 6px;
+}
+
+#workspaces button.active {
+    color: @primary-text;
+    background-color: @primary;
+}
+
+#workspaces button:hover {
+    background-color: alpha(@primary, 0.3);
+}
+
+/* --- COLORES DE MÓDULOS DEL SISTEMA --- */
+#cpu,
+#memory,
+#pulseaudio,
+#clock,
+#custom-gpu-temp,
+#network {
+    color: @primary;
+}
+
+/* --- BLUETOOTH --- */
+#bluetooth {
+    color: @foreground;
+}
+
+#bluetooth.connected {
+    color: @primary;
+}
+
+#bluetooth.disabled {
+    color: alpha(@foreground, 0.5);
+}
+
+#tray {
+    padding-right: 12px;
+}
+
+/* --- MEDIA PLAYER --- */
+/* Estado base (cuando se inicia o hay errores) */
+#custom-mediaplayer {
+    color: @foreground;
+}
+
+/* Estado Reproduciendo: Hereda la cápsula maestro y solo cambia el texto al color de acento */
+#custom-mediaplayer.playing {
+    color: @primary;
+}
+
+/* Estado Pausado (Opcional, ya que tu script de Bash oculta el texto,
+   pero se mantiene por seguridad arquitectónica) */
+#custom-mediaplayer.paused {
+    color: alpha(@foreground, 0.5);
+}

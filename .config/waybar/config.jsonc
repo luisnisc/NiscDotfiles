@@ -1,0 +1,72 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 38,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock", "custom/mediaplayer"],
+    "modules-right": ["cpu", "memory", "custom/gpu-temp", "pulseaudio", "bluetooth", "network" ],
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}"
+    },
+
+    "clock": {
+        "format": "󰥔 {:%H:%M  %d/%m}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 2,
+        "on-click": "kitty -e btop"
+    },
+
+    "memory": {
+        "format": " {percentage}%",
+        "interval": 2
+    },
+    "custom/gpu-temp": {
+            "exec": "~/.config/waybar/scripts/gpu-temp.sh",
+            "return-type": "json",
+            "interval": 3,
+            "tooltip": true,
+        },
+        "custom/mediaplayer": {
+            "exec": "~/.config/waybar/scripts/mediaplayer.sh",
+            "return-type": "json",
+            "format": "{}",
+            "max-length": 45
+        },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "  Mute",
+        "format-icons": {
+            "default": [" ", " ", " "]
+        },
+
+        "on-click": "pavucontrol"
+    },
+    "bluetooth": {
+            "format": "",
+            "format-disabled": "󰂲",
+            "format-connected": "󰂱  {device_alias}",
+            "format-connected-battery": "󰂱  {device_alias} 󰥉 {device_battery_percentage}%",
+            "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+            "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+            "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+            "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+            "on-click": "blueman-manager"
+        },
+
+    "network": {
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "󰈀  Eth",
+        "format-disconnected": "󰤮  Offline",
+        "tooltip-format": "{ifname} via {gwaddr}"
+    },
+}

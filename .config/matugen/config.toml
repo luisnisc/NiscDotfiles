@@ -1,0 +1,22 @@
+[config]
+# Waypaper ya se encarga de swww, así que Matugen solo gestionará colores.
+
+[templates.kitty]
+input_path = "~/.config/matugen/templates/kitty-colors.conf"
+output_path = "~/.config/kitty/colors.conf"
+
+[templates.hyprland]
+input_path = "~/.config/matugen/templates/hyprland-colors.lua"
+output_path = "~/.config/hypr/colors.lua"
+
+[templates.rofi]
+input_path = "~/.config/matugen/templates/rofi-colors.rasi"
+output_path = "~/.config/rofi/colors.rasi"
+
+[templates.waybar]
+input_path = "~/.config/matugen/templates/colors-waybar.css"
+output_path = "~/.config/waybar/colors-waybar.css"
+
+[templates.sddm]
+input_path = "~/.config/matugen/templates/sddm-corners.conf"
+output_path = "/usr/share/sddm/themes/corners/theme.conf"
