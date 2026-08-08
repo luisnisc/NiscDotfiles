@@ -30,6 +30,25 @@ hl.window_rule({
     float = true,
 })
 
+hl.window_rule({
+    match       = { class = "org.gnome.Calendar" },
+    opacity     = "override 0.85 override 0.85 override",
+    float       = true,
+    center      = true,
+    animation   = "slide",
+    move        = { "(monitor_w * 0.5) - (window_w * 0.5)", "(monitor_h * 0.025) + 20" },
+    workspace   = "special:calendar",
+})
+
+hl.window_rule({
+    match       = { title = "btop" },
+    opacity     = "override 0.85 override 0.85 override",
+    float       = true,
+    center      = true,
+    animation   = "slide",
+    move        = { "(monitor_w * 0.5) - (window_w * 0.5)", "(monitor_h * 0.025) + 20" },
+    workspace   = "special:calendar",
+})
 ---
 --- GAMING
 ---
