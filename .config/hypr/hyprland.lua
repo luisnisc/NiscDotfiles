@@ -1,7 +1,6 @@
 local vars = require("variables")
 
 hl.on("hyprland.start", function ()
-  hl.exec_cmd(vars.terminal)
   hl.exec_cmd("nm-applet")
   hl.exec_cmd("waybar & waypaper --restore")
 
@@ -38,6 +37,12 @@ hl.monitor({
 
 })
 
+hl.monitor({
+    output = "eDP-1",
+    mode   = "1920x1200@60",
+    position = "auto",
+    scale = "1"
+})
 
 
 
@@ -110,7 +115,6 @@ hl.config({
         fullscreen_on_one_column = true,
     },
 })
-
 
 
 --------------------------------

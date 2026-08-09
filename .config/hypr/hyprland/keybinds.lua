@@ -52,6 +52,10 @@ hl.bind(vars.kbCrunchyroll, hl.dsp.exec_cmd(vars.crunchyroll))
 hl.bind(vars.kbYoutube, hl.dsp.exec_cmd(vars.youtube))
 
 
+hl.bind(vars.kbSpecialMusic, hl.dsp.exec_cmd("spotify"))
+hl.bind(mainMod .. "+ C", hl.dsp.exec_cmd("zeditor"))
+
+
 
 hl.bind(vars.kbScreenshot,hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy && notify-send "Captura" "Selección copiada al portapapeles"'))
 

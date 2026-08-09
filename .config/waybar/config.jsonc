@@ -9,9 +9,22 @@
     "modules-right": ["cpu", "memory", "custom/gpu-temp", "pulseaudio", "bluetooth", "network" ],
 
     "hyprland/workspaces": {
-        "disable-scroll": true,
+        "format": "{icon}",
+        "on-click": "activate",
         "all-outputs": true,
-        "format": "{name}"
+        "persistent-workspaces": {
+            "*": 6
+        },
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "urgent": "",
+            "default": ""
+        }
     },
 
     "clock": {

@@ -84,7 +84,7 @@ hl.window_rule({ match = { fullscreen = true }, opaque = true })
 
 hl.window_rule({ match = { class = "cs2" }, immediate = true })
 
-
+hl.window_rule({ match = { title = "btop"}, float= true})
 
 
 ------

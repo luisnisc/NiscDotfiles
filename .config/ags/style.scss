@@ -1,0 +1,38 @@
+/* Oscurecer el fondo del escritorio */
+.powermenu-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* El botón gigante transparente que ocupa todo el fondo */
+.powermenu-bg-click {
+    background: transparent;
+    border: none;
+}
+
+/* Contenedor central */
+.powermenu-container {
+    background-color: #1a1c23;
+    border: 2px solid #3b3f4c;
+    border-radius: 16px;
+    padding: 40px;
+}
+
+/* Botones individuales */
+.power-btn {
+    background-color: transparent;
+    color: #e3e2e2;
+    border: none;
+    border-radius: 12px;
+    min-width: 140px;
+    min-height: 140px;
+    padding: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efectos interactivos */
+.power-btn:hover, .power-btn:focus {
+    background-color: #3b3f4c;
+    color: #ffffff;
+    box-shadow: inset 0 0 0 2px #b8cacd;
+    cursor:pointer;
+}
