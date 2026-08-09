@@ -6,6 +6,7 @@ return {
     browser     = "zen-browser",
     crunchyroll = "~/.config/scripts/crunchyroll-app.sh",
     youtube     = "~/.config/scripts/youtube-app.sh",
+    powerMenu   = "CTRL + ALT + DELETE",
 
     -----------------------------------------
     ---APPS

@@ -4,6 +4,7 @@ local vars = require("variables")
 local mainMod = vars.mainMod
 local browser = vars.browser
 
+
 hl.bind(mainMod .. "+ RETURN", hl.dsp.exec_cmd(vars.terminal))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(vars.fileManager))
@@ -72,3 +73,6 @@ hl.bind(vars.kbToggleSong, hl.dsp.exec_cmd("playerctl play-pause"))
 hl.bind(vars.kbToggleFullScreen, hl.dsp.window.fullscreen({ action = "toggle" }))
 
 hl.bind(vars.kbHyprLock, hl.dsp.exec_cmd("hyprlock"))
+
+
+hl.bind(vars.powerMenu, hl.dsp.exec_cmd("ags toggle powermenu"))
