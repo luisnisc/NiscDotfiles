@@ -1,0 +1,8 @@
+@define-color bg-dark {{colors.surface.default.hex}};
+@define-color bg-card {{colors.surface_container.default.hex}};
+@define-color bg-hover {{colors.surface_container_high.default.hex}};
+@define-color text-main {{colors.on_surface.default.hex}};
+@define-color text-sub {{colors.on_surface_variant.default.hex}};
+@define-color accent {{colors.primary.default.hex}};
+@define-color on-accent {{colors.on_primary.default.hex}};
+@define-color border-color {{colors.outline_variant.default.hex}};

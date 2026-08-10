@@ -90,3 +90,16 @@ hl.window_rule({ match = { title = "btop"}, float= true})
 ------
 --- Layer Rules
 ------
+
+hl.layer_rule({
+    match        = { namespace = "swaync-control-center" },
+    blur         = true,
+    ignore_alpha = 0.5
+})
+
+-- Reglas para las ventanas emergentes de notificación de SwayNC
+hl.layer_rule({
+    match        = { namespace = "swaync-notification-window" },
+    blur         = true,
+    ignore_alpha = 0.5
+})

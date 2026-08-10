@@ -4,9 +4,9 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("nm-applet")
   hl.exec_cmd("waybar & waypaper --restore")
   hl.exec_cmd("ags run")
-
+  hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
   hl.exec_cmd("fcitx5 -d")
-
+  hl.exec_cmd("swaync")
 
  end)
 
@@ -55,6 +55,7 @@ hl.monitor({
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_THEME", "Bibata-Modern-Ice")
 
 
 -----------------------

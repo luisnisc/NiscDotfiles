@@ -1,0 +1,138 @@
+@import "colors.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+}
+
+/* --- Popups / Notificaciones Flotantes --- */
+.notification-row {
+    outline: none;
+    margin: 8px 10px;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+    background: transparent;
+}
+
+.notification {
+    border-radius: 12px;
+    border: 1px solid @border-color;
+    background: @bg-card;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    padding: 6px;
+}
+
+.notification-content {
+    background: transparent;
+    padding: 8px;
+}
+
+.close-button {
+    background: @bg-hover;
+    color: @text-main;
+    text-shadow: none;
+    padding: 2px;
+    border-radius: 100%;
+    margin-top: 5px;
+    margin-right: 5px;
+    box-shadow: none;
+    border: none;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.close-button:hover {
+    background: @accent;
+    color: @on-accent;
+    transition: all 0.15s ease-in-out;
+}
+
+.notification-default-action,
+.notification-action {
+    padding: 4px;
+    margin: 0;
+    box-shadow: none;
+    background: @bg-card;
+    border: 1px solid @border-color;
+    color: @text-main;
+    border-radius: 8px;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    background: @bg-hover;
+    border-color: @accent;
+}
+
+.summary {
+    font-weight: bold;
+    font-size: 14px;
+    color: @accent;
+}
+
+.body {
+    color: @text-main;
+}
+
+.time {
+    color: @text-sub;
+    font-size: 11px;
+}
+
+/* --- Centro de Control (Panel Lateral) --- */
+.control-center {
+    background: @bg-dark;
+    border-radius: 16px;
+    border: 1px solid @border-color;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    margin: 12px;
+    padding: 12px;
+}
+
+.control-center-list {
+    background: transparent;
+}
+
+.widget-title {
+    color: @accent;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 8px;
+}
+
+.widget-title > button {
+    background: @bg-card;
+    border: 1px solid @border-color;
+    border-radius: 8px;
+    color: @text-main;
+}
+
+.widget-title > button:hover {
+    background: @accent;
+    color: @on-accent;
+}
+
+.widget-dnd {
+    background: @bg-card;
+    border: 1px solid @border-color;
+    border-radius: 12px;
+    margin: 8px;
+    padding: 8px;
+}
+
+.widget-dnd > switch {
+    background: @bg-hover;
+    border-radius: 12px;
+    border: 1px solid @border-color;
+}
+
+.widget-dnd > switch:checked {
+    background: @accent;
+}
+
+.widget-dnd > switch slider {
+    background: @text-main;
+    border-radius: 12px;
+}

@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock", "custom/mediaplayer"],
-    "modules-right": ["cpu", "memory", "custom/gpu-temp", "pulseaudio", "bluetooth", "network" ],
+    "modules-right": ["cpu", "memory", "battery", "custom/gpu-temp", "pulseaudio", "bluetooth", "network" ],
 
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -44,6 +44,27 @@
     "memory": {
         "format": " {percentage}%",
         "interval": 2
+    },
+
+    "battery": {
+        "interval": 10,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% ",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25,
+
+        "events": {
+            "on-discharging-warning": "notify-send -u normal 'Batería baja'",
+            "on-discharging-critical": "notify-send -u critical 'Batería muy baja'",
+            "on-charging-100": "notify-send -u normal 'Batería cargada'",
+            "on-discharging": "notify-send -u normal 'Fuente' 'Desconectado de la red'",
+            "on-charging": "notify-send -u normal 'Fuente' 'Cargando...'"
+        }
     },
     "custom/gpu-temp": {
             "exec": "~/.config/waybar/scripts/gpu-temp.sh",
@@ -83,6 +104,7 @@
         "format-wifi": "  {signalStrength}%",
         "format-ethernet": "󰈀  Eth",
         "format-disconnected": "󰤮  Offline",
-        "tooltip-format": "{ifname} via {gwaddr}"
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "on-click": "kitty --class nmtui-float -o include=matugen-theme.conf -e nmtui"
     },
 }

@@ -20,3 +20,8 @@ output_path = "~/.config/waybar/colors-waybar.css"
 [templates.sddm]
 input_path = "~/.config/matugen/templates/sddm-corners.conf"
 output_path = "/usr/share/sddm/themes/corners/theme.conf"
+
+[templates.swaync]
+input_path = "~/.config/matugen/templates/swaync.css"
+output_path = "~/.config/swaync/colors.css"
+post_hook = "swaync-client -R && swaync-client -rs"
