@@ -57,7 +57,8 @@ window#waybar {
 #pulseaudio,
 #clock,
 #custom-gpu-temp,
-#network {
+#network,
+#battery{
     color: @primary;
 }
 
