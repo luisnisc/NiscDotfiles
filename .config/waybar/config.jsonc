@@ -85,8 +85,8 @@
         "format-icons": {
             "default": [" ", " ", " "]
         },
-
-        "on-click": "pavucontrol"
+        "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.workspace.toggle_special(\"pulseaudio\"))'",
+        "on-click-right": "hyprctl eval 'hl.exec_cmd(\"pavucontrol\")'",
     },
     "bluetooth": {
             "format": "",

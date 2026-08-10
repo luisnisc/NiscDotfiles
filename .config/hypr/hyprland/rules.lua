@@ -41,13 +41,12 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    match       = { title = "btop" },
+    match       = { class = "org.pulseaudio.pavucontrol" },
     opacity     = "override 0.85 override 0.85 override",
     float       = true,
-    center      = true,
-    animation   = "slide",
-    move        = { "(monitor_w * 0.5) - (window_w * 0.5)", "(monitor_h * 0.025) + 20" },
-    workspace   = "special:calendar",
+    animation   = "slidevert 100%",
+    move        = { "1400", "40" },
+    workspace   = "special:pulseaudio",
 })
 ---
 --- GAMING
@@ -81,6 +80,7 @@ hl.window_rule({ match = { class = "steam_app_2483190" }, opaque = true })
 hl.window_rule({ match = { class = "steam_app_2483190" }, immediate = true })
 
 hl.window_rule({ match = { fullscreen = true }, opaque = true })
+hl.window_rule({ match = { float = true }, opaque = true })
 
 hl.window_rule({ match = { class = "cs2" }, immediate = true })
 

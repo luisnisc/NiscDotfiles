@@ -29,3 +29,7 @@ post_hook = "swaync-client -R && swaync-client -rs"
 [templates.hyprlock]
 input_path = "~/.config/matugen/templates/hyprlock-colors.conf"
 output_path = "~/.config/hypr/hyprlock-colors.conf"
+
+[templates.cava]
+input_path = "~/.config/matugen/templates/cava.conf"
+output_path = "~/.config/cava/config"

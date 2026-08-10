@@ -39,6 +39,7 @@ bindkey '^[[3;5~' kill-word                          # Ctrl + Suprimir (palabra 
 bindkey '^[[1;3~' kill-word                          # Alt + Suprimir
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias lazydotfiles='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # --- AUTOCOMPLETADO AUTOMÁTICO ---
 autoload -Uz compinit

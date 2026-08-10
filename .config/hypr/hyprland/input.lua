@@ -1,6 +1,6 @@
 hl.config({
     input = {
-        natural_scroll = true,
+        natural_scroll = false,
         touchpad = {
             natural_scroll = true
         }
