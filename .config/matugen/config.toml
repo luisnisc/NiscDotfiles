@@ -25,3 +25,7 @@ output_path = "/usr/share/sddm/themes/corners/theme.conf"
 input_path = "~/.config/matugen/templates/swaync.css"
 output_path = "~/.config/swaync/colors.css"
 post_hook = "swaync-client -R && swaync-client -rs"
+
+[templates.hyprlock]
+input_path = "~/.config/matugen/templates/hyprlock-colors.conf"
+output_path = "~/.config/hypr/hyprlock-colors.conf"

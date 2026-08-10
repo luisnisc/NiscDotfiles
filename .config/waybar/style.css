@@ -64,7 +64,7 @@ window#waybar {
 
 /* --- BLUETOOTH --- */
 #bluetooth {
-    color: @foreground;
+    color: @primary;
 }
 
 #bluetooth.connected {
