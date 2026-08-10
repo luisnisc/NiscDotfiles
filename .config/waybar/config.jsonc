@@ -38,7 +38,8 @@
     "cpu": {
         "format": " {usage}%",
         "interval": 2,
-        "on-click": "kitty -e btop"
+        "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.workspace.toggle_special(\"btop\"))'",
+        "on-click-right": "hyprctl eval 'hl.exec_cmd(\"kitty --class btop -e btop\")'",
     },
 
     "memory": {

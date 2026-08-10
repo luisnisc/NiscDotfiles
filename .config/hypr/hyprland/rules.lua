@@ -48,6 +48,15 @@ hl.window_rule({
     move        = { "1400", "40" },
     workspace   = "special:pulseaudio",
 })
+
+hl.window_rule({
+    match       = { class = "btop" },
+    opacity     = "override 0.85 override 0.85 override",
+    float       = true,
+    animation   = "slidevert 100%",
+    move        = { "1400", "40" },
+    workspace   = "special:btop",
+})
 ---
 --- GAMING
 ---
@@ -85,6 +94,50 @@ hl.window_rule({ match = { float = true }, opaque = true })
 hl.window_rule({ match = { class = "cs2" }, immediate = true })
 
 hl.window_rule({ match = { title = "btop"}, float= true})
+
+------
+--- Dashboard Workspace 3
+------
+
+hl.window_rule({
+    match       = { class = "dash-nvtop" },
+    workspace   = "3",
+    float     = true,
+    move        = { "22", "62" },
+    size        = { "375", "505" }
+})
+
+hl.window_rule({
+    match       = { class = "dash-btop" },
+    workspace   = "3",
+    float     = true,
+    move        = { "411", "62" },
+    size        = { "1487", "505" }
+})
+
+hl.window_rule({
+    match       = { class = "dash-cava" },
+    workspace   = "3",
+    float     = true,
+    move        = { "22", "824" },
+    size        = { "378", "234" }
+})
+
+hl.window_rule({
+    match       = { class = "dash-pipes" },
+    workspace   = "3",
+    float     = true,
+    move        = { "22", "580" },
+    size        = { "378", "234" }
+})
+
+hl.window_rule({
+    match       = { class = "dash-lazy" },
+    workspace   = "3",
+    float     = true,
+    move        = { "414", "581" },
+    size        = { "1484", "477" }
+})
 
 
 ------
