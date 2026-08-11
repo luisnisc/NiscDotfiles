@@ -26,6 +26,7 @@ window#waybar {
 #custom-gpu-temp,
 #bluetooth,
 #tray,
+#idle_inhibitor,
 #custom-mediaplayer {
     background-color: alpha(@background-alt, 0.85);
     padding: 4px 12px;
@@ -58,6 +59,7 @@ window#waybar {
 #clock,
 #custom-gpu-temp,
 #network,
+#idle_inhibitor,
 #battery{
     color: @primary;
 }
