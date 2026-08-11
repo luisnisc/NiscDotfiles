@@ -83,3 +83,4 @@ hl.bind(vars.kbHyprLock, hl.dsp.exec_cmd("hyprlock"))
 hl.bind(vars.powerMenu, hl.dsp.exec_cmd("ags toggle powermenu"))
 
 hl.bind(mainMod .. "+ PERIOD", hl.dsp.exec_cmd(vars.emojiPicker))
+hl.bind(mainMod .. "+ SHIFT + C", hl.dsp.exec_cmd(vars.colorPicker))

@@ -8,6 +8,7 @@ return {
     youtube     = "~/.config/scripts/youtube-app.sh",
     powerMenu   = "CTRL + ALT + DELETE",
     emojiPicker = 'rofi -modi "emoji:rofimoji" -show emoji',
+    colorPicker = 'hyprpicker -a --radius=100',
 
     -----------------------------------------
     ---APPS
