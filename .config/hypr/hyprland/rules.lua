@@ -78,6 +78,7 @@ hl.window_rule({ match = { class = "dev.zed.Zed" }, workspace = "special:code" }
 hl.window_rule({ match = { class = "Spotify" }, workspace = "special:music" })
 
 hl.window_rule({ match = { class = "obsidian" }, workspace = "special:notes" })
+hl.window_rule({ match = { class = "md.Obsidian" }, workspace = "special:notes" })
 
 hl.window_rule({ match = { class = "chrome-crunchyroll.com__-Default" }, workspace = "special:anime" })
 
