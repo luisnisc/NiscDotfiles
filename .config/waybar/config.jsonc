@@ -6,7 +6,15 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock", "custom/mediaplayer"],
-    "modules-right": ["cpu", "memory", "battery", "custom/gpu-temp", "pulseaudio", "bluetooth", "network" ],
+    "modules-right": ["cpu", "memory", "battery", "custom/gpu-temp", "pulseaudio", "idle_inhibitor", "bluetooth", "network" ],
+
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "",
+        "deactivated": "󰽥"
+      },
+    },
 
     "hyprland/workspaces": {
         "format": "{icon}",

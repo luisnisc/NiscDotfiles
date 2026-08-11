@@ -7,6 +7,7 @@ return {
     crunchyroll = "~/.config/scripts/crunchyroll-app.sh",
     youtube     = "~/.config/scripts/youtube-app.sh",
     powerMenu   = "CTRL + ALT + DELETE",
+    emojiPicker = 'rofi -modi "emoji:rofimoji" -show emoji',
 
     -----------------------------------------
     ---APPS
