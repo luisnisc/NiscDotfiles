@@ -9,6 +9,7 @@ return {
     powerMenu   = "CTRL + ALT + DELETE",
     emojiPicker = 'rofi -modi "emoji:rofimoji" -show emoji',
     colorPicker = 'hyprpicker -a --radius=100',
+    clipboardHistory = 'cliphist list | rofi -dmenu -p "󰅌 Clipboard" -theme ~/.config/rofi/config.rasi | cliphist decode | wl-copy',
 
     -----------------------------------------
     ---APPS

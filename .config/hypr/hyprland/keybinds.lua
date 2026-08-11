@@ -100,3 +100,4 @@ hl.bind(vars.powerMenu, hl.dsp.exec_cmd("ags toggle powermenu"))
 
 hl.bind(mainMod .. "+ PERIOD", hl.dsp.exec_cmd(vars.emojiPicker))
 hl.bind(mainMod .. "+ SHIFT + C", hl.dsp.exec_cmd(vars.colorPicker))
+hl.bind(mainMod .. "+ ALT + V", hl.dsp.exec_cmd(vars.clipboardHistory))
