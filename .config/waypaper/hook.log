@@ -1,7 +1,7 @@
-[dom 09 ago 2026 15:14:33 CEST] Procesando fondo: /home/nisc/Pictures/Wallpapers/wallhaven-wep79x_2560x1440.png
-[dom 09 ago 2026 15:14:35 CEST] Fondo procesado y sincronizado con SDDM.
-[dom 09 ago 2026 15:14:35 CEST] Detectado fondo OSCURO (Mediana: 0.553102)
-[dom 09 ago 2026 15:14:35 CEST] Generando paleta con Matugen (Modo: dark)...
+[mar 11 ago 2026 08:45:04 CEST] Procesando fondo: /home/nisc/Pictures/Wallpapers/japan3.jpg
+[mar 11 ago 2026 08:45:08 CEST] Fondo procesado y sincronizado con SDDM.
+[mar 11 ago 2026 08:45:09 CEST] Detectado fondo OSCURO (Mediana: 0.228877)
+[mar 11 ago 2026 08:45:09 CEST] Generando paleta con Matugen (Modo: dark)...
 Error: 
    0: [91mFailed to get source color.[0m
    1: [91mCould not get source color from image: /tmp/current_wallpaper.png[0m
@@ -10,7 +10,9 @@ Error:
 
 Backtrace omitted. Run with RUST_BACKTRACE=1 environment variable to display it.
 Run with RUST_BACKTRACE=full to include source snippets.
-[dom 09 ago 2026 15:14:35 CEST] ADVERTENCIA: Matugen rechazó la imagen. Calculando color de contingencia...
-[dom 09 ago 2026 15:14:36 CEST] Inyectando color representativo extraído: #310809
+[mar 11 ago 2026 08:45:09 CEST] ADVERTENCIA: Matugen rechazó la imagen. Calculando color de contingencia...
+[mar 11 ago 2026 08:45:14 CEST] Inyectando color representativo extraído: #4E576A
+CSS reload success: true
 ok
-[dom 09 ago 2026 15:14:36 CEST] Sincronización completada con éxito.
+waypaper: ningún proceso encontrado
+[mar 11 ago 2026 08:45:14 CEST] Sincronización completada con éxito.
