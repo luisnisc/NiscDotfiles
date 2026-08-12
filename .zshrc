@@ -56,3 +56,6 @@ eval "$(starship init zsh)"
 
 # --- EXECUCIÓN AL ABRIR TERMINAL ---
 fastfetch
+
+# Created by `pipx` on 2026-08-12 09:18:02
+export PATH="$PATH:/home/nisc/.local/bin"
