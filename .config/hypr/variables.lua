@@ -4,6 +4,7 @@ return {
     menu        = "rofi -show drun",
     mainMod     = "SUPER",
     browser     = "zen-browser",
+    notes       = "obsidian",
     crunchyroll = "~/.config/scripts/crunchyroll-app.sh",
     youtube     = "~/.config/scripts/youtube-app.sh",
     powerMenu   = "CTRL + ALT + DELETE",
@@ -17,6 +18,7 @@ return {
     kbBrowser          = "SUPER + B",
     kbCrunchyroll      = "SUPER + A",
     kbYoutube          = "SUPER + Y",
+    kbNotes            = "SUPER + N",
     -----------------------------------------
     --- Utilities
     -----------------------------------------

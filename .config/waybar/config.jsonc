@@ -13,7 +13,7 @@
       "format-icons": {
         "activated": "󰖙",
         "deactivated": "󰽥"
-      },
+      }
     },
 
     "hyprland/workspaces": {
