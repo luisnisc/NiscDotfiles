@@ -6,14 +6,31 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock", "custom/mediaplayer"],
-    "modules-right": ["cpu", "memory", "battery", "custom/gpu-temp", "pulseaudio", "idle_inhibitor", "bluetooth", "network" ],
+    "modules-right": ["cpu", "memory", "battery", "custom/gpu-temp", "pulseaudio", "idle_inhibitor", "bluetooth", "custom/notification", "network" ],
+
+    "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+    "notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+    "none": " ",
+    "dnd-notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+    "dnd-none": " "
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+    "escape": true
+    },
 
     "idle_inhibitor": {
       "format": "{icon}",
       "format-icons": {
         "activated": "󰖙",
         "deactivated": "󰽥"
-      }
+      },
     },
 
     "hyprland/workspaces": {
@@ -70,8 +87,8 @@
         "events": {
             "on-discharging-warning": "notify-send -u normal 'Batería baja'",
             "on-discharging-critical": "notify-send -u critical 'Batería muy baja'",
-            "on-charging-100": "notify-send -u normal 'Batería cargada'",
-            "on-discharging": "notify-send -u normal 'Fuente' 'Desconectado de la red'",
+            "on-charging-100": "bash -c '[ ! -f /tmp/bat_full ] && notify-send -u normal \"Batería cargada\" && touch /tmp/bat_full'",
+            "on-discharging": "bash -c 'rm -f /tmp/bat_full; notify-send -u normal \"Fuente\" \"Desconectado de la red\"'",
             "on-charging": "notify-send -u normal 'Fuente' 'Cargando...'"
         }
     },

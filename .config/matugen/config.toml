@@ -33,3 +33,11 @@ output_path = "~/.config/hypr/hyprlock-colors.conf"
 [templates.cava]
 input_path = "~/.config/matugen/templates/cava.conf"
 output_path = "~/.config/cava/config"
+
+[templates.gtk4]
+input_path = "~/.config/matugen/templates/gtk.css"
+output_path = "~/.config/gtk-4.0/colors.css"
+
+[templates.obsidian]
+input_path = "~/.config/matugen/templates/obsidian.css"
+output_path = "~/Documents/Obsidian/Nisc/.obsidian/snippets/obsidian.css"

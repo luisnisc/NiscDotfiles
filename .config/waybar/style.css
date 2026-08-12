@@ -27,6 +27,7 @@ window#waybar {
 #bluetooth,
 #tray,
 #idle_inhibitor,
+#custom-notification,
 #custom-mediaplayer {
     background-color: alpha(@background-alt, 0.85);
     padding: 4px 12px;
@@ -59,6 +60,7 @@ window#waybar {
 #clock,
 #custom-gpu-temp,
 #network,
+#custom-notification,
 #idle_inhibitor,
 #battery{
     color: @primary;
@@ -81,19 +83,14 @@ window#waybar {
     padding-right: 12px;
 }
 
-/* --- MEDIA PLAYER --- */
-/* Estado base (cuando se inicia o hay errores) */
 #custom-mediaplayer {
     color: @foreground;
 }
 
-/* Estado Reproduciendo: Hereda la cápsula maestro y solo cambia el texto al color de acento */
 #custom-mediaplayer.playing {
     color: @primary;
 }
 
-/* Estado Pausado (Opcional, ya que tu script de Bash oculta el texto,
-   pero se mantiene por seguridad arquitectónica) */
 #custom-mediaplayer.paused {
     color: alpha(@foreground, 0.5);
 }
