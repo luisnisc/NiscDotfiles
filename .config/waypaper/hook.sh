@@ -66,8 +66,12 @@ sed -i "s/gtk-application-prefer-dark-theme.*/gtk-application-prefer-dark-theme 
 
 pkill -USR1 -x kitty
 pkill -SIGUSR2 waybar
+pkill -USR2 cava
+killall -USR2 btop
+
 hyprctl reload
 
 killall waypaper
+
 
 echo "[$(date)] Sincronización completada con éxito."

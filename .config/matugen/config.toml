@@ -1,5 +1,7 @@
 [config]
 # Waypaper ya se encarga de swww, así que Matugen solo gestionará colores.
+[config.post_hooks]
+pywalfox = "pywalfox update"
 
 [templates.kitty]
 input_path = "~/.config/matugen/templates/kitty-colors.conf"
@@ -41,3 +43,19 @@ output_path = "~/.config/gtk-4.0/colors.css"
 [templates.obsidian]
 input_path = "~/.config/matugen/templates/obsidian.css"
 output_path = "~/Documents/Obsidian/Nisc/.obsidian/snippets/obsidian.css"
+
+[templates.zen-browser]
+input_path = "~/.config/matugen/templates/zen-userchrome.css"
+output_path = "/home/nisc/.config/zen/m6hl2xau.Default (release)/chrome/userChrome.css"
+
+[templates.spicetify]
+input_path = "~/.config/matugen/templates/colors.ini"
+output_path = "/home/nisc/.config/spicetify/Themes/Sleek/color.ini"
+
+[templates.btop]
+input_path = "~/.config/matugen/templates/btop.theme"
+output_path = "~/.config/btop/themes/matugen.theme"
+
+[templates.zed]
+input_path = "~/.config/matugen/templates/zed-colors.json"
+output_path = "~/.config/zed/themes/matugen.json"
