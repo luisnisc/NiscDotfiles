@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 
-# Ejecuta playerctl en modo escucha continua (--follow)
-playerctl --follow metadata --format "{{status}}|||{{artist}} - {{title}}" 2>/dev/null | while read -r line; do
+if ! command -v playerctl &>/dev/null || ! command -v zscroll &>/dev/null; then
+    echo '{"text": "Dependencias faltantes"}'
+    exit 1
+fi
 
-    # Separamos el estado (Playing/Paused) de la información de la canción
-    STATUS="${line%%|||*}"
-    INFO="${line#*|||}"
-
-    # Escapamos las comillas dobles para que no rompan el formato JSON de Waybar
-    INFO="${INFO//\"/\\\"}"
-
-    echo "{\"text\": \" $INFO\", \"class\": \"playing\"}"
-done
+exec zscroll \
+    --length 20 \
+    --delay 0.2 \
+    --match-command "playerctl status 2>/dev/null" \
+    --match-text "Playing" "--before-text '{\"text\": \" ' --after-text '\", \"class\": \"playing\"}'" \
+    --match-text "Paused" "--before-text '{\"text\": \" ' --after-text '\", \"class\": \"paused\"}'" \
+    --update-check true \
+    "playerctl metadata --format '{{artist}} - {{title}}' 2>/dev/null"

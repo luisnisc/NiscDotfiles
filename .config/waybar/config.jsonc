@@ -93,16 +93,19 @@
         }
     },
     "custom/gpu-temp": {
+            "exec-if": "test -z \"$(ls /sys/class/power_supply/ | grep BAT)\"",
             "exec": "~/.config/waybar/scripts/gpu-temp.sh",
             "return-type": "json",
             "interval": 3,
             "tooltip": true,
         },
-        "custom/mediaplayer": {
+    "custom/mediaplayer": {
             "exec": "~/.config/waybar/scripts/mediaplayer.sh",
             "return-type": "json",
             "format": "{}",
-            "max-length": 45
+            "on-click": "playerctl play-pause",
+            "on-click-right": "playerctl next",
+            "escape": false
         },
 
     "pulseaudio": {
