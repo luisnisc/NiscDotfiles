@@ -73,16 +73,17 @@ hl.window_rule({ match = { class = "waypaper" }, float = true, opacity = 1 })
 hl.window_rule({ match = { class = "blueman-manager" }, float = true, opacity = 0.8 })
 
 
-hl.window_rule({ match = { class = "dev.zed.Zed" }, workspace = "special:code" })
+hl.window_rule({ match = { class = "nvim" }, workspace = "special:code" })
 
 hl.window_rule({ match = { class = "Spotify" }, workspace = "special:music" })
 
 hl.window_rule({ match = { class = "obsidian" }, workspace = "special:notes" })
-hl.window_rule({ match = { class = "md.Obsidian" }, workspace = "special:notes" })
 
 hl.window_rule({ match = { class = "chrome-crunchyroll.com__-Default" }, workspace = "special:anime" })
 
 hl.window_rule({ match = { class = "chrome-youtube.com__-Default" }, workspace = "special:media" })
+
+hl.window_rule({ match = { class = "discord"}, workspace = "special:social"})
 
 
 hl.window_rule({ match = { class = "steam_app_2483190" }, opaque = true })
@@ -91,6 +92,7 @@ hl.window_rule({ match = { class = "steam_app_2483190" }, immediate = true })
 
 hl.window_rule({ match = { fullscreen = true }, opaque = true })
 hl.window_rule({ match = { float = true }, opaque = true })
+hl.window_rule({ match = { title = "web-panel — Zen Browser"}, opaque = true})
 
 hl.window_rule({ match = { class = "cs2" }, immediate = true })
 
@@ -157,3 +159,8 @@ hl.layer_rule({
     blur         = true,
     ignore_alpha = 0.5
 })
+
+
+------
+--- Workspace Rules
+------

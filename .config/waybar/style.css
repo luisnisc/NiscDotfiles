@@ -28,6 +28,7 @@ window#waybar {
 #tray,
 #idle_inhibitor,
 #custom-notification,
+#upower,
 #custom-mediaplayer {
     background-color: alpha(@background-alt, 0.85);
     padding: 4px 12px;
@@ -62,6 +63,7 @@ window#waybar {
 #network,
 #custom-notification,
 #idle_inhibitor,
+#upower,
 #battery{
     color: @primary;
 }

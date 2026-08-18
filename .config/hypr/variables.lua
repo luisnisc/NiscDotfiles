@@ -19,6 +19,7 @@ return {
     kbCrunchyroll      = "SUPER + A",
     kbYoutube          = "SUPER + Y",
     kbNotes            = "SUPER + N",
+    kbDiscord          = "SUPER + D",
     -----------------------------------------
     --- Utilities
     -----------------------------------------
@@ -38,6 +39,7 @@ return {
     kbSpecialMedia     = "SUPER + CTRL + Y",
     kbSpecialAnime     = "SUPER + CTRL + A",
     kbSpecialMusic     = "SUPER + M",
+    kbSpecialSocial    = "SUPER + SHIFT + D",
     -----------------------------------------
     --- Windows
     -----------------------------------------

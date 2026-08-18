@@ -1,21 +1,42 @@
 {
-    "layer": "top",
-    "position": "top",
-    "height": 38,
-    "spacing": 4,
-
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock", "custom/mediaplayer"],
-    "modules-right": ["cpu", "memory", "battery", "custom/gpu-temp", "pulseaudio", "idle_inhibitor", "bluetooth", "custom/notification", "network" ],
-
-    "custom/notification": {
+  "layer": "top",
+  "position": "top",
+  "height": 38,
+  "spacing": 4,
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock",
+    "custom/mediaplayer"
+  ],
+  "modules-right": [
+    "cpu",
+    "memory",
+    "battery",
+    "custom/gpu-temp",
+    "pulseaudio",
+    "idle_inhibitor",
+    "bluetooth",
+    "custom/notification",
+    "network",
+    "upower"
+  ],
+  "upower": {
+    "native-path": "/org/bluez/hci0/dev_D4_AE_41_38_D0_EF",
+    "icon-size": 20,
+    "hide-if-empty": true,
+    "tooltip": true,
+    "tooltip-spacing": 20
+  },
+  "custom/notification": {
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
-    "notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
-    "none": " ",
-    "dnd-notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
-    "dnd-none": " "
+      "notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+      "none": " ",
+      "dnd-notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+      "dnd-none": " "
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
@@ -23,117 +44,117 @@
     "on-click": "sleep 0.1 && swaync-client -t -sw",
     "on-click-right": "sleep 0.1 && swaync-client -d -sw",
     "escape": true
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "󰖙",
+      "deactivated": "󰽥"
     },
-
-    "idle_inhibitor": {
-      "format": "{icon}",
-      "format-icons": {
-        "activated": "󰖙",
-        "deactivated": "󰽥"
-      },
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "persistent-workspaces": {
+      "*": 6
     },
-
-    "hyprland/workspaces": {
-        "format": "{icon}",
-        "on-click": "activate",
-        "all-outputs": true,
-        "persistent-workspaces": {
-            "*": 6
-        },
-        "format-icons": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "6": "6",
-            "urgent": "",
-            "default": ""
-        }
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "urgent": "",
+      "default": ""
+    }
+  },
+  "clock": {
+    "format": "󰥔 {:%H:%M  %d/%m}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.workspace.toggle_special(\"calendar\"))'",
+    "on-click-right": "hyprctl eval 'hl.exec_cmd(\"gnome-calendar\")'",
+  },
+  "cpu": {
+    "format": " {usage}%",
+    "interval": 2,
+    "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.workspace.toggle_special(\"btop\"))'",
+    "on-click-right": "hyprctl eval 'hl.exec_cmd(\"kitty --class btop -e btop\")'",
+  },
+  "memory": {
+    "format": " {percentage}%",
+    "interval": 2
+  },
+  "battery": {
+    "interval": 10,
+    "states": {
+      "warning": 30,
+      "critical": 15
     },
-
-    "clock": {
-        "format": "󰥔 {:%H:%M  %d/%m}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.workspace.toggle_special(\"calendar\"))'",
-        "on-click-right": "hyprctl eval 'hl.exec_cmd(\"gnome-calendar\")'",
-
+    "format": "{capacity}% {icon}",
+    "format-charging": "{capacity}% 󰂄",
+    "format-plugged": "{capacity}% ",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "max-length": 25,
+    "events": {
+      "on-discharging-warning": "notify-send -u normal 'Batería baja'",
+      "on-discharging-critical": "notify-send -u critical 'Batería muy baja'",
+      "on-charging-100": "bash -c '[ ! -f /tmp/bat_full ] && notify-send -u normal \"Batería cargada\" && touch /tmp/bat_full'",
+      "on-discharging": "bash -c 'rm -f /tmp/bat_full; notify-send -u normal \"Fuente\" \"Desconectado de la red\"'",
+      "on-charging": "notify-send -u normal 'Fuente' 'Cargando...'"
+    }
+  },
+  "custom/gpu-temp": {
+    "exec-if": "test -z \"$(ls /sys/class/power_supply/ | grep BAT)\"",
+    "exec": "~/.config/waybar/scripts/gpu-temp.sh",
+    "return-type": "json",
+    "interval": 3,
+    "tooltip": true,
+  },
+  "custom/mediaplayer": {
+    "exec": "~/.config/waybar/scripts/mediaplayer.sh",
+    "return-type": "json",
+    "format": "{}",
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "escape": false
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "  Mute",
+    "format-icons": {
+      "default": [
+        " ",
+        " ",
+        " "
+      ]
     },
-
-    "cpu": {
-        "format": " {usage}%",
-        "interval": 2,
-        "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.workspace.toggle_special(\"btop\"))'",
-        "on-click-right": "hyprctl eval 'hl.exec_cmd(\"kitty --class btop -e btop\")'",
-    },
-
-    "memory": {
-        "format": " {percentage}%",
-        "interval": 2
-    },
-
-    "battery": {
-        "interval": 10,
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% 󰂄",
-        "format-plugged": "{capacity}% ",
-        "format-icons": ["", "", "", "", ""],
-        "max-length": 25,
-
-        "events": {
-            "on-discharging-warning": "notify-send -u normal 'Batería baja'",
-            "on-discharging-critical": "notify-send -u critical 'Batería muy baja'",
-            "on-charging-100": "bash -c '[ ! -f /tmp/bat_full ] && notify-send -u normal \"Batería cargada\" && touch /tmp/bat_full'",
-            "on-discharging": "bash -c 'rm -f /tmp/bat_full; notify-send -u normal \"Fuente\" \"Desconectado de la red\"'",
-            "on-charging": "notify-send -u normal 'Fuente' 'Cargando...'"
-        }
-    },
-    "custom/gpu-temp": {
-            "exec-if": "test -z \"$(ls /sys/class/power_supply/ | grep BAT)\"",
-            "exec": "~/.config/waybar/scripts/gpu-temp.sh",
-            "return-type": "json",
-            "interval": 3,
-            "tooltip": true,
-        },
-    "custom/mediaplayer": {
-            "exec": "~/.config/waybar/scripts/mediaplayer.sh",
-            "return-type": "json",
-            "format": "{}",
-            "on-click": "playerctl play-pause",
-            "on-click-right": "playerctl next",
-            "escape": false
-        },
-
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-muted": "  Mute",
-        "format-icons": {
-            "default": [" ", " ", " "]
-        },
-        "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.workspace.toggle_special(\"pulseaudio\"))'",
-        "on-click-right": "hyprctl eval 'hl.exec_cmd(\"pavucontrol\")'",
-    },
-    "bluetooth": {
-            "format": "",
-            "format-disabled": "󰂲",
-            "format-connected": "󰂱  {device_alias}",
-            "format-connected-battery": "󰂱  {device_alias} 󰥉 {device_battery_percentage}%",
-            "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-            "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
-            "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-            "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-            "on-click": "blueman-manager"
-        },
-
-    "network": {
-        "format-wifi": "  {signalStrength}%",
-        "format-ethernet": "󰈀  Eth",
-        "format-disconnected": "󰤮  Offline",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "on-click": "kitty --class nmtui-float -o include=matugen-theme.conf -e nmtui"
-    },
+    "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.workspace.toggle_special(\"pulseaudio\"))'",
+    "on-click-right": "hyprctl eval 'hl.exec_cmd(\"pavucontrol\")'",
+  },
+  "bluetooth": {
+    "format": "",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱  {device_alias}",
+    "format-connected-battery": "󰂱  {device_alias} 󰥉 {device_battery_percentage}%",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+    "on-click": "blueman-manager"
+  },
+  "network": {
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "󰈀  Eth",
+    "format-disconnected": "󰤮  Offline",
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "on-click": "kitty --class nmtui-float -o include=matugen-theme.conf -e nmtui"
+  },
 }

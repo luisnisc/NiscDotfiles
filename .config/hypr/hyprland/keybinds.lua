@@ -70,9 +70,9 @@ hl.bind(vars.kbBrowser, hl.dsp.exec_cmd(vars.browser))
 hl.bind(vars.kbCrunchyroll, hl.dsp.exec_cmd(vars.crunchyroll))
 hl.bind(vars.kbYoutube, hl.dsp.exec_cmd(vars.youtube))
 
-
+hl.bind(vars.kbDiscord, hl.dsp.exec_cmd("discord"))
 hl.bind(vars.kbSpecialMusic, hl.dsp.exec_cmd("spotify"))
-hl.bind(mainMod .. "+ C", hl.dsp.exec_cmd("zeditor"))
+hl.bind(mainMod .. "+ C", hl.dsp.exec_cmd("kitty --class nvim -e nvim &"))
 hl.bind(vars.kbNotes, hl.dsp.exec_cmd(vars.notes))
 
 hl.bind(vars.kbScreenshot,hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy && notify-send "Captura" "Selección copiada al portapapeles"'))
@@ -82,6 +82,7 @@ hl.bind(vars.kbSpecialMusic, hl.dsp.workspace.toggle_special("music"))
 hl.bind(vars.kbSpecialNotes, hl.dsp.workspace.toggle_special("notes"))
 hl.bind(vars.kbSpecialMedia, hl.dsp.workspace.toggle_special("media"))
 hl.bind(vars.kbSpecialAnime, hl.dsp.workspace.toggle_special("anime"))
+hl.bind(vars.kbSpecialSocial, hl.dsp.workspace.toggle_special("social"))
 
 hl.bind(vars.kbNextSong, hl.dsp.exec_cmd("playerctl next"))
 hl.bind(vars.kbPreviousSong, hl.dsp.exec_cmd("playerctl previous"))
