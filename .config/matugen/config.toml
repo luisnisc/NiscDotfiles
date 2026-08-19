@@ -59,3 +59,8 @@ output_path = "~/.config/btop/themes/matugen.theme"
 [templates.zed]
 input_path = "~/.config/matugen/templates/zed-colors.json"
 output_path = "~/.config/zed/themes/matugen.json"
+
+[templates.neovim]
+input_path = "~/.config/matugen/templates/nvim-colors.json"
+output_path = "~/.cache/matugen/nvim-colors.json"
+post_hook = "pkill -SIGUSR1 nvim"

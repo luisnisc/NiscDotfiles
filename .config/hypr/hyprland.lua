@@ -1,81 +1,71 @@
 local vars = require("variables")
 
-hl.on("hyprland.start", function ()
-  hl.exec_cmd("nm-applet")
-  hl.exec_cmd("waybar & waypaper --restore")
-  hl.exec_cmd("ags run")
-  hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
-  hl.exec_cmd("fcitx5 -d")
-  hl.exec_cmd("swaync")
-  hl.exec_cmd(". ~/.config/scripts/hypr_dashboard.sh")
-  hl.exec_cmd("wl-paste --type text --watch cliphist store")
-  hl.exec_cmd("wl-paste --type image --watch cliphist store")
-  hl.exec_cmd("spicetify watch -s &")
-
- end)
-
+hl.on("hyprland.start", function()
+	hl.exec_cmd("nm-applet")
+	hl.exec_cmd("waybar & waypaper --restore")
+	hl.exec_cmd("ags run")
+	hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
+	hl.exec_cmd("fcitx5 -d")
+	hl.exec_cmd("swaync")
+	hl.exec_cmd(". ~/.config/scripts/hypr_dashboard.sh")
+	hl.exec_cmd("wl-paste --type text --watch cliphist store")
+	hl.exec_cmd("wl-paste --type image --watch cliphist store")
+	hl.exec_cmd("spicetify watch -s &")
+end)
 
 ------------------
 ---- MONITORS ----
 ------------------
 
 hl.monitor({
-    output   = "DP-2",
-    mode     = "2560x1440@240",
-    position = "1921x0",
-    scale    = "auto",
+	output = "DP-2",
+	mode = "2560x1440@240",
+	position = "1921x0",
+	scale = "auto",
 })
 
 hl.monitor({
-    output   = "HDMI-A-1",
-    mode   = "1920x1080@60",
-    position = "0x0",
-    scale   = "auto"
+	output = "HDMI-A-1",
+	mode = "1920x1080@60",
+	position = "0x0",
+	scale = "auto",
 })
 
 hl.monitor({
-    output = "DP-3",
-    mode   = "1920x1080@144",
-    position = "auto",
-    scale   = "auto"
-
+	output = "DP-3",
+	mode = "1920x1080@144",
+	position = "auto",
+	scale = "auto",
 })
 
 hl.monitor({
-    output = "eDP-1",
-    mode   = "1920x1200@60",
-    position = "3840x0",
-    scale = "1.2"
+	output = "eDP-1",
+	mode = "1920x1200@60",
+	position = "3840x0",
+	scale = "1.2",
 })
 
 hl.monitor({
-    output = "DP-10",
-    mode   = "1920x1080@120",
-    position = "0x0",
-    scale   = "auto"
-
+	output = "DP-10",
+	mode = "1920x1080@120",
+	position = "0x0",
+	scale = "auto",
 })
 
 hl.monitor({
-    output = "DP-8",
-    mode   = "1920x1080@120",
-    position = "1920x0",
-    scale   = "auto"
-
+	output = "DP-8",
+	mode = "1920x1080@120",
+	position = "1920x0",
+	scale = "auto",
 })
-
-
-
 
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
 -------------------------------
 
-
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_THEME", "Bibata-Modern-Ice")
-
 
 -----------------------
 ----- PERMISSIONS -----
@@ -94,8 +84,6 @@ hl.env("HYPRCURSOR_THEME", "Bibata-Modern-Ice")
 hl.permission("/usr/(bin|local/bin)/grim", "screencopy", "allow")
 hl.permission("/usr/(bin|local/bin)/hyprpm", "plugin", "allow")
 hl.permission("/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", "screencopy", "allow")
-
-
 
 -- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 -- "Smart gaps" / "No gaps when only"
@@ -117,25 +105,24 @@ hl.permission("/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", "screencop
 
 -- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
 hl.config({
-    dwindle = {
-        preserve_split = true, -- You probably want this
-    },
+	dwindle = {
+		preserve_split = true, -- You probably want this
+	},
 })
 
 -- See https://wiki.hypr.land/Configuring/Layouts/Master-Layout/ for more
 hl.config({
-    master = {
-        new_status = "master",
-    },
+	master = {
+		new_status = "master",
+	},
 })
 
 -- See https://wiki.hypr.land/Configuring/Layouts/Scrolling-Layout/ for more
 hl.config({
-    scrolling = {
-        fullscreen_on_one_column = true,
-    },
+	scrolling = {
+		fullscreen_on_one_column = true,
+	},
 })
-
 
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
@@ -146,19 +133,16 @@ hl.config({
 
 -- Example window rules that are useful
 
-
-
-
 --Configs
 
-require('hyprland.keybinds')
-require('hyprland.animations')
-require('hyprland.decorations')
-require('hyprland.env')
-require('hyprland.execs')
-require('hyprland.functions')
-require('hyprland.general')
-require('hyprland.group')
-require('hyprland.input')
-require('hyprland.misc')
-require('hyprland.rules')
+require("hyprland.keybinds")
+require("hyprland.animations")
+require("hyprland.decorations")
+require("hyprland.env")
+require("hyprland.execs")
+require("hyprland.functions")
+require("hyprland.general")
+require("hyprland.group")
+require("hyprland.input")
+require("hyprland.misc")
+require("hyprland.rules")
