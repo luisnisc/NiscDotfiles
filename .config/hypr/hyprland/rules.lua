@@ -29,14 +29,13 @@ hl.window_rule({
 	move = "20 monitor_h-120",
 	float = true,
 })
-
 hl.window_rule({
 	match = { class = "org.gnome.Calendar" },
 	opacity = "override 0.85 override 0.85 override",
 	float = true,
-	center = true,
 	animation = "slide",
-	move = { "(monitor_w * 0.5) - (window_w * 0.5)", "(monitor_h * 0.025) + 20" },
+	-- Sin espacios en las operaciones matemáticas. Se elimina 'center = true'.
+	move = { "(monitor_w*0.5)-(window_w*0.5)", "(monitor_h*0.025)+20" },
 	workspace = "special:calendar",
 })
 
@@ -45,7 +44,8 @@ hl.window_rule({
 	opacity = "override 0.85 override 0.85 override",
 	float = true,
 	animation = "slidevert 100%",
-	move = { "1400", "40" },
+	-- Posicionamiento relativo dinámico, reemplazando los píxeles estáticos.
+	move = { "monitor_w*0.75", "monitor_h*0.04" },
 	workspace = "special:pulseaudio",
 })
 
@@ -54,10 +54,9 @@ hl.window_rule({
 	opacity = "override 0.85 override 0.85 override",
 	float = true,
 	animation = "slidevert 100%",
-	move = { "1400", "40" },
+	move = { "monitor_w*0.55", "monitor_h*0.04" },
 	workspace = "special:btop",
-})
----
+}) ---
 --- GAMING
 ---
 hl.window_rule({ match = { class = "cs2" }, immediate = true })
