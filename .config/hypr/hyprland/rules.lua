@@ -76,7 +76,7 @@ hl.window_rule({ match = { class = "Spotify" }, workspace = "special:music" })
 
 hl.window_rule({ match = { initial_title = "Obsidian" }, workspace = "special:notes" })
 
-hl.window_rule({ match = { class = "chrome-crunchyroll.com__-Default" }, workspace = "special:anime" })
+hl.window_rule({ match = { initial_title = "crunchyroll.com_/" }, workspace = "special:anime" })
 
 hl.window_rule({ match = { class = "chrome-youtube.com__-Default" }, workspace = "special:media" })
 
