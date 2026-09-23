@@ -50,6 +50,9 @@ hl.bind(mainMod .. " + ALT + down", hl.dsp.window.move({ direction = "down" }))
 hl.bind(mainMod .. " + ALT + left", hl.dsp.window.move({ direction = "left" }))
 hl.bind(mainMod .. " + ALT + right", hl.dsp.window.move({ direction = "right" }))
 
+hl.bind(mainMod .. "+ SHIFT + right", hl.dsp.focus({ workspace = "e+1" }))
+hl.bind(mainMod .. "+ SHIFT + left", hl.dsp.focus({ workspace = "e-1" }))
+
 hl.bind(
 	"XF86AudioRaiseVolume",
 	hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"),
