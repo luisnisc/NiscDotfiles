@@ -41,6 +41,12 @@ bindkey '^[[1;3~' kill-word                          # Alt + Suprimir
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias lazydotfiles='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+alias webPanel='cd ~/Projects/python/prueba/web-panel/ && npm run dev -- --host'
+alias backend='cd ~/Projects/python/prueba/backend/ && node server.js'
+alias pyEnter='cd ~/Projects/python/prueba/vision_service/'
+alias pyExit='cd ~/Projects/python/prueba/vision_service_exit/'
+
+
 # --- AUTOCOMPLETADO AUTOMÁTICO ---
 autoload -Uz compinit
 compinit
@@ -54,7 +60,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # --- INICIALIZACIÓN DEL PROMPT (STARSHIP) ---
 eval "$(starship init zsh)"
 
-# --- EXECUCIÓN AL ABRIR TERMINAL ---
+
 fastfetch
 
 # Created by `pipx` on 2026-08-12 09:18:02

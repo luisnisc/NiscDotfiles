@@ -88,7 +88,8 @@ hl.bind(vars.kbCrunchyroll, hl.dsp.exec_cmd(vars.crunchyroll))
 hl.bind(vars.kbYoutube, hl.dsp.exec_cmd(vars.youtube))
 
 hl.bind(vars.kbDiscord, hl.dsp.exec_cmd("discord"))
-hl.bind(vars.kbSpecialMusic, hl.dsp.exec_cmd("spotify"))
+-- hl.bind(vars.kbSpecialMusic, hl.dsp.exec_cmd("spotify"))
+hl.bind(vars.kbSpecialMusic, hl.dsp.exec_cmd("spotifast"))
 hl.bind(mainMod .. "+ C", hl.dsp.exec_cmd("kitty --class nvim -e nvim &"))
 hl.bind(vars.kbNotes, hl.dsp.exec_cmd(vars.notes))
 
@@ -117,3 +118,15 @@ hl.bind(vars.powerMenu, hl.dsp.exec_cmd("ags toggle powermenu"))
 hl.bind(mainMod .. "+ PERIOD", hl.dsp.exec_cmd(vars.emojiPicker))
 hl.bind(mainMod .. "+ SHIFT + C", hl.dsp.exec_cmd(vars.colorPicker))
 hl.bind(mainMod .. "+ ALT + V", hl.dsp.exec_cmd(vars.clipboardHistory))
+
+hl.bind("SUPER + TAB", hl.plugin.gloview.toggle)
+hl.bind("SUPER + SHIFT + TAB", hl.plugin.gloview.desktop)
+hl.bind("SUPER + CTRL + TAB", hl.plugin.gloview.allworkspaces)
+
+hl.bind("SUPER + bracketright", hl.plugin.gloview.next)
+hl.bind("SUPER + bracketleft", hl.plugin.gloview.prev)
+hl.bind("SUPER + 2", function()
+	hl.plugin.gloview.setworkspace(2)
+end)
+
+hl.bind("SUPER + ALT + RETURN", hl.dsp.exec_cmd("kitty lazydocker &"))

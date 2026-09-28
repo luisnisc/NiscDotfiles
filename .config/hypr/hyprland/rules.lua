@@ -73,6 +73,7 @@ hl.window_rule({ match = { class = "blueman-manager" }, float = true, opacity = 
 hl.window_rule({ match = { class = "nvim" }, workspace = "special:code" })
 
 hl.window_rule({ match = { class = "Spotify" }, workspace = "special:music" })
+hl.window_rule({ match = { class = "spotifast" }, workspace = "special:music" })
 
 hl.window_rule({ match = { initial_title = "Obsidian" }, workspace = "special:notes" })
 

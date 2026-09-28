@@ -54,7 +54,7 @@
   },
   "hyprland/workspaces": {
     "format": "{icon}",
-    "on-click": "activate",
+    "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.focus({ workspace = \"{name}\" }))'",
     "all-outputs": true,
     "persistent-workspaces": {
       "*": 6
