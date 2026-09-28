@@ -64,3 +64,7 @@ output_path = "~/.config/zed/themes/matugen.json"
 input_path = "~/.config/matugen/templates/nvim-colors.json"
 output_path = "~/.cache/matugen/nvim-colors.json"
 post_hook = "pkill -SIGUSR1 nvim"
+
+[templates.spotifast]
+input_path = "~/.config/matugen/templates/spotifast.json"
+output_path = "~/.config/spotifast/themes/Matugen.json"
