@@ -60,8 +60,8 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # --- INICIALIZACIÓN DEL PROMPT (STARSHIP) ---
 eval "$(starship init zsh)"
 
-
-fastfetch
-
+if [ "$COLUMNS" -ge 50 ] && [ "$LINES" -ge 26 ]; then
+    fastfetch
+fi
 # Created by `pipx` on 2026-08-12 09:18:02
 export PATH="$PATH:/home/nisc/.local/bin"
