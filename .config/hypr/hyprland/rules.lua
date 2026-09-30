@@ -79,6 +79,8 @@ hl.window_rule({ match = { initial_title = "Obsidian" }, workspace = "special:no
 
 hl.window_rule({ match = { initial_title = "crunchyroll.com_/" }, workspace = "special:anime" })
 
+hl.window_rule({ match = { initial_class = "VirtualBox Machine" }, workspace = "special:virtualMachine" })
+
 hl.window_rule({ match = { class = "chrome-youtube.com__-Default" }, workspace = "special:media" })
 
 hl.window_rule({ match = { class = "discord" }, workspace = "special:social" })

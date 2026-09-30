@@ -1,0 +1,6 @@
+2026/08/19-08:49:57.040 4a773 Creating DB /home/nisc/.config/obsidian/Partitions/vault-8e5a2c34737c765a/IndexedDB/https_github.com_0.indexeddb.leveldb since it was missing.
+2026/08/19-08:49:57.042 4a773 Reusing MANIFEST /home/nisc/.config/obsidian/Partitions/vault-8e5a2c34737c765a/IndexedDB/https_github.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/08/19-10:39:45.294 4a82f Level-0 table #5: started
+2026/08/19-10:39:45.297 4a82f Level-0 table #5: 8776 bytes OK
+2026/08/19-10:39:45.298 4a82f Delete type=0 #3
+2026/08/19-10:39:45.298 4a82f Manual compaction at level-0 from (begin) .. (end); will stop at (end)

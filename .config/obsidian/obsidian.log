@@ -1,0 +1,492 @@
+2026-08-08 18:10:29 Loaded main app package /usr/lib/obsidian/obsidian.asar
+2026-08-08 18:10:29 Checking for update using Github
+2026-08-08 18:10:29 Success.
+2026-08-08 18:10:29 Latest version is 1.13.4
+2026-08-08 18:10:29 Downloading update from https://github.com/obsidianmd/obsidian-releases/releases/download/v1.13.4/obsidian-1.13.4.asar.gz
+2026-08-08 18:10:31 Verifying hash & signature. Size= 8772423
+2026-08-08 18:10:31 Saving file
+2026-08-08 18:10:31 Update complete.
+2026-08-10 10:50:02 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.4.asar
+2026-08-10 10:50:02 Checking for update using Github
+2026-08-10 10:50:03 Success.
+2026-08-10 10:50:03 Latest version is 1.13.4
+2026-08-10 10:50:03 App is up to date.
+2026-08-10 11:50:02 Checking for update using Github
+2026-08-10 11:50:02 Success.
+2026-08-10 11:50:02 Latest version is 1.13.4
+2026-08-10 11:50:02 App is up to date.
+2026-08-11 05:34:25 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.4.asar
+2026-08-11 05:34:25 Checking for update using Github
+2026-08-11 05:34:25 Success.
+2026-08-11 05:34:25 Latest version is 1.13.6
+2026-08-11 05:34:25 Downloading update from https://github.com/obsidianmd/obsidian-releases/releases/download/v1.13.6/obsidian-1.13.6.asar.gz
+2026-08-11 05:34:32 Verifying hash & signature. Size= 8772809
+2026-08-11 05:34:32 Saving file
+2026-08-11 05:34:32 Update complete.
+2026-08-11 12:48:49 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.6.asar
+2026-08-11 12:48:49 Checking for update using Github
+2026-08-11 12:48:49 Failed to check for update using Github (net::ERR_CERT_COMMON_NAME_INVALID)
+2026-08-11 12:48:49 Checking for update using obsidian.md
+2026-08-11 12:48:50 Failed to check for update using obsidian.md (net::ERR_CERT_COMMON_NAME_INVALID)
+2026-08-11 18:06:33 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.6.asar
+2026-08-11 18:06:33 Checking for update using Github
+2026-08-11 18:06:33 Success.
+2026-08-11 18:06:33 Latest version is 1.13.6
+2026-08-11 18:06:33 App is up to date.
+2026-08-12 05:46:52 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.6.asar
+2026-08-12 05:46:52 Checking for update using Github
+2026-08-12 05:46:53 Success.
+2026-08-12 05:46:53 Latest version is 1.13.6
+2026-08-12 05:46:53 App is up to date.
+2026-08-12 05:49:08 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.6.asar
+2026-08-12 05:49:08 Checking for update using Github
+2026-08-12 05:49:08 Success.
+2026-08-12 05:49:08 Latest version is 1.13.6
+2026-08-12 05:49:08 App is up to date.
+2026-08-12 06:49:08 Checking for update using Github
+2026-08-12 06:49:09 Success.
+2026-08-12 06:49:09 Latest version is 1.13.6
+2026-08-12 06:49:09 App is up to date.
+2026-08-12 07:49:08 Checking for update using Github
+2026-08-12 07:49:08 Failed to check for update using Github (net::ERR_INTERNET_DISCONNECTED)
+2026-08-12 07:49:08 Checking for update using obsidian.md
+2026-08-12 07:49:08 Failed to check for update using obsidian.md (net::ERR_INTERNET_DISCONNECTED)
+2026-08-12 08:39:18 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.6.asar
+2026-08-12 08:39:18 Checking for update using Github
+2026-08-12 08:39:19 Success.
+2026-08-12 08:39:19 Latest version is 1.13.6
+2026-08-12 08:39:19 App is up to date.
+2026-08-12 09:31:15 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.6.asar
+2026-08-12 09:39:18 Checking for update using Github
+2026-08-12 09:39:19 Success.
+2026-08-12 09:39:19 Latest version is 1.13.6
+2026-08-12 09:39:19 App is up to date.
+2026-08-12 10:39:18 Checking for update using Github
+2026-08-12 10:39:18 Success.
+2026-08-12 10:39:18 Latest version is 1.13.6
+2026-08-12 10:39:18 App is up to date.
+2026-08-12 11:39:18 Checking for update using Github
+2026-08-12 11:39:19 Success.
+2026-08-12 11:39:19 Latest version is 1.13.6
+2026-08-12 11:39:19 App is up to date.
+2026-08-12 15:59:30 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.6.asar
+2026-08-12 15:59:30 Checking for update using Github
+2026-08-12 16:01:36 Failed to check for update using Github (net::ERR_NAME_NOT_RESOLVED)
+2026-08-12 16:01:36 Checking for update using obsidian.md
+2026-08-12 16:03:34 Failed to check for update using obsidian.md (net::ERR_NAME_NOT_RESOLVED)
+2026-08-13 05:18:11 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.6.asar
+2026-08-13 05:18:11 Checking for update using Github
+2026-08-13 05:18:11 Success.
+2026-08-13 05:18:11 Latest version is 1.13.7
+2026-08-13 05:18:11 Downloading update from https://github.com/obsidianmd/obsidian-releases/releases/download/v1.13.7/obsidian-1.13.7.asar.gz
+2026-08-13 05:18:16 Verifying hash & signature. Size= 8773048
+2026-08-13 05:18:16 Saving file
+2026-08-13 05:18:16 Update complete.
+2026-08-13 05:47:10 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-13 06:18:10 Checking for update using Github
+2026-08-13 06:18:11 Success.
+2026-08-13 06:18:11 Latest version is 1.13.7
+2026-08-13 06:18:11 An update is already downloaded.
+2026-08-13 07:18:11 Checking for update using Github
+2026-08-13 07:18:12 Success.
+2026-08-13 07:18:12 Latest version is 1.13.7
+2026-08-13 07:18:12 An update is already downloaded.
+2026-08-14 07:28:51 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-14 07:28:51 Checking for update using Github
+2026-08-14 07:28:51 Success.
+2026-08-14 07:28:51 Latest version is 1.13.7
+2026-08-14 07:28:51 App is up to date.
+2026-08-14 08:28:51 Checking for update using Github
+2026-08-14 08:28:51 Success.
+2026-08-14 08:28:51 Latest version is 1.13.7
+2026-08-14 08:28:51 App is up to date.
+2026-08-14 15:46:23 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-14 15:46:23 Checking for update using Github
+2026-08-14 15:46:33 Failed to check for update using Github (net::ERR_NETWORK_CHANGED)
+2026-08-14 15:46:33 Checking for update using obsidian.md
+2026-08-14 20:32:10 Failed to check for update using obsidian.md (net::ERR_NETWORK_CHANGED)
+2026-08-15 16:36:32 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-15 16:36:32 Checking for update using Github
+2026-08-15 16:36:32 Success.
+2026-08-15 16:36:32 Latest version is 1.13.7
+2026-08-15 16:36:32 App is up to date.
+2026-08-15 16:39:46 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-16 15:40:28 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-16 15:40:29 Checking for update using Github
+2026-08-16 15:40:29 Success.
+2026-08-16 15:40:29 Latest version is 1.13.7
+2026-08-16 15:40:29 App is up to date.
+2026-08-16 15:40:30 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-16 15:48:09 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-16 15:49:45 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-16 16:09:05 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-16 16:12:08 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-16 16:13:39 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-16 16:40:28 Checking for update using Github
+2026-08-16 16:40:28 Success.
+2026-08-16 16:40:28 Latest version is 1.13.7
+2026-08-16 16:40:28 App is up to date.
+2026-08-17 05:56:32 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-17 05:56:32 Checking for update using Github
+2026-08-17 05:56:33 Success.
+2026-08-17 05:56:33 Latest version is 1.13.7
+2026-08-17 05:56:33 App is up to date.
+2026-08-17 07:28:36 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-17 07:28:37 Checking for update using Github
+2026-08-17 07:28:37 Success.
+2026-08-17 07:28:37 Latest version is 1.13.7
+2026-08-17 07:28:37 App is up to date.
+2026-08-17 07:39:25 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-17 08:29:21 Checking for update using Github
+2026-08-17 08:29:21 Failed to check for update using Github (net::ERR_NAME_NOT_RESOLVED)
+2026-08-17 08:29:21 Checking for update using obsidian.md
+2026-08-17 08:29:21 Failed to check for update using obsidian.md (net::ERR_NAME_NOT_RESOLVED)
+2026-08-17 08:57:00 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-17 08:57:01 Checking for update using Github
+2026-08-17 08:57:01 Success.
+2026-08-17 08:57:01 Latest version is 1.13.7
+2026-08-17 08:57:01 App is up to date.
+2026-08-17 09:56:59 Checking for update using Github
+2026-08-17 09:56:59 Failed to check for update using Github (net::ERR_NAME_NOT_RESOLVED)
+2026-08-17 09:56:59 Checking for update using obsidian.md
+2026-08-17 09:56:59 Failed to check for update using obsidian.md (net::ERR_NAME_NOT_RESOLVED)
+2026-08-17 10:56:59 Checking for update using Github
+2026-08-17 10:56:59 Failed to check for update using Github (net::ERR_NAME_NOT_RESOLVED)
+2026-08-17 10:56:59 Checking for update using obsidian.md
+2026-08-17 10:56:59 Failed to check for update using obsidian.md (net::ERR_NAME_NOT_RESOLVED)
+2026-08-17 11:56:59 Checking for update using Github
+2026-08-17 11:57:00 Success.
+2026-08-17 11:57:00 Latest version is 1.13.7
+2026-08-17 11:57:00 App is up to date.
+2026-08-18 05:29:52 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-18 05:29:53 Checking for update using Github
+2026-08-18 05:29:53 Failed to check for update using Github (net::ERR_NAME_NOT_RESOLVED)
+2026-08-18 05:29:53 Checking for update using obsidian.md
+2026-08-18 05:29:53 Failed to check for update using obsidian.md (net::ERR_NAME_NOT_RESOLVED)
+2026-08-18 06:27:05 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-18 06:27:05 Checking for update using Github
+2026-08-18 06:27:06 Success.
+2026-08-18 06:27:06 Latest version is 1.13.7
+2026-08-18 06:27:06 App is up to date.
+2026-08-18 06:41:15 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-18 06:44:01 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-18 07:58:04 Checking for update using Github
+2026-08-18 07:58:05 Success.
+2026-08-18 07:58:05 Latest version is 1.13.7
+2026-08-18 07:58:05 App is up to date.
+2026-08-18 08:08:16 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-18 09:07:37 Checking for update using Github
+2026-08-18 09:07:37 Success.
+2026-08-18 09:07:37 Latest version is 1.13.7
+2026-08-18 09:07:37 App is up to date.
+2026-08-18 10:02:18 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-18 10:02:18 Checking for update using Github
+2026-08-18 10:02:18 Success.
+2026-08-18 10:02:18 Latest version is 1.13.7
+2026-08-18 10:02:18 App is up to date.
+2026-08-18 10:27:08 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-18 10:33:38 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-18 11:02:18 Checking for update using Github
+2026-08-18 11:02:18 Success.
+2026-08-18 11:02:18 Latest version is 1.13.7
+2026-08-18 11:02:18 App is up to date.
+2026-08-18 12:02:18 Checking for update using Github
+2026-08-18 12:02:18 Success.
+2026-08-18 12:02:18 Latest version is 1.13.7
+2026-08-18 12:02:18 App is up to date.
+2026-08-19 06:48:16 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-19 06:48:16 Checking for update using Github
+2026-08-19 06:48:16 Success.
+2026-08-19 06:48:16 Latest version is 1.13.7
+2026-08-19 06:48:16 App is up to date.
+2026-08-19 07:48:16 Checking for update using Github
+2026-08-19 07:48:16 Success.
+2026-08-19 07:48:16 Latest version is 1.13.7
+2026-08-19 07:48:16 App is up to date.
+2026-08-19 09:03:13 Checking for update using Github
+2026-08-19 09:03:13 Failed to check for update using Github (net::ERR_NAME_NOT_RESOLVED)
+2026-08-19 09:03:13 Checking for update using obsidian.md
+2026-08-19 09:03:13 Failed to check for update using obsidian.md (net::ERR_NAME_NOT_RESOLVED)
+2026-08-19 09:56:10 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-19 09:56:10 Checking for update using Github
+2026-08-19 09:56:10 Success.
+2026-08-19 09:56:10 Latest version is 1.13.7
+2026-08-19 09:56:10 App is up to date.
+2026-08-19 10:49:37 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-19 10:49:37 Checking for update using Github
+2026-08-19 10:49:37 Failed to check for update using Github (net::ERR_NAME_NOT_RESOLVED)
+2026-08-19 10:49:37 Checking for update using obsidian.md
+2026-08-19 10:49:37 Failed to check for update using obsidian.md (net::ERR_NAME_NOT_RESOLVED)
+2026-08-19 11:49:38 Checking for update using Github
+2026-08-19 11:49:39 Success.
+2026-08-19 11:49:39 Latest version is 1.13.7
+2026-08-19 11:49:39 App is up to date.
+2026-08-19 12:49:38 Checking for update using Github
+2026-08-19 12:49:39 Success.
+2026-08-19 12:49:39 Latest version is 1.13.7
+2026-08-19 12:49:39 App is up to date.
+2026-08-20 05:40:52 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-20 05:40:53 Checking for update using Github
+2026-08-20 05:40:53 Success.
+2026-08-20 05:40:53 Latest version is 1.13.7
+2026-08-20 05:40:53 App is up to date.
+2026-08-20 06:04:49 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-20 06:04:49 Checking for update using Github
+2026-08-20 06:04:50 Success.
+2026-08-20 06:04:50 Latest version is 1.13.7
+2026-08-20 06:04:50 App is up to date.
+2026-08-20 07:04:49 Checking for update using Github
+2026-08-20 07:04:49 Success.
+2026-08-20 07:04:49 Latest version is 1.13.7
+2026-08-20 07:04:49 App is up to date.
+2026-08-20 08:04:49 Checking for update using Github
+2026-08-20 08:04:50 Success.
+2026-08-20 08:04:50 Latest version is 1.13.7
+2026-08-20 08:04:50 App is up to date.
+2026-08-20 09:04:49 Checking for update using Github
+2026-08-20 09:04:49 Failed to check for update using Github (net::ERR_NAME_NOT_RESOLVED)
+2026-08-20 09:04:49 Checking for update using obsidian.md
+2026-08-20 09:04:49 Failed to check for update using obsidian.md (net::ERR_NAME_NOT_RESOLVED)
+2026-08-20 10:06:59 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-20 10:06:59 Checking for update using Github
+2026-08-20 10:06:59 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-20 10:06:59 Success.
+2026-08-20 10:06:59 Latest version is 1.13.7
+2026-08-20 10:06:59 App is up to date.
+2026-08-20 10:55:24 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-20 10:55:24 Checking for update using Github
+2026-08-20 10:55:24 Success.
+2026-08-20 10:55:24 Latest version is 1.13.7
+2026-08-20 10:55:24 App is up to date.
+2026-08-20 11:55:24 Checking for update using Github
+2026-08-20 11:55:24 Success.
+2026-08-20 11:55:24 Latest version is 1.13.7
+2026-08-20 11:55:24 App is up to date.
+2026-08-20 17:52:12 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-20 17:52:13 Checking for update using Github
+2026-08-20 17:52:13 Success.
+2026-08-20 17:52:13 Latest version is 1.13.7
+2026-08-20 17:52:13 App is up to date.
+2026-08-21 10:56:42 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-21 10:56:42 Checking for update using Github
+2026-08-21 10:56:43 Success.
+2026-08-21 10:56:43 Latest version is 1.13.7
+2026-08-21 10:56:43 App is up to date.
+2026-08-21 10:57:59 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-22 14:31:11 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-22 14:31:11 Checking for update using Github
+2026-08-22 14:31:12 Success.
+2026-08-22 14:31:12 Latest version is 1.13.7
+2026-08-22 14:31:12 App is up to date.
+2026-08-22 14:38:50 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-22 14:45:23 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-22 14:45:32 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-22 15:03:10 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-22 15:08:07 Loaded updated app package /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-31 06:55:31 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-31 06:55:31 Checking for update using Github
+2026-08-31 06:55:31 Success.
+2026-08-31 06:55:31 Latest version is 1.13.7
+2026-08-31 06:55:31 App is up to date.
+2026-08-31 06:58:32 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-31 06:58:32 Checking for update using Github
+2026-08-31 06:58:32 Success.
+2026-08-31 06:58:32 Latest version is 1.13.7
+2026-08-31 06:58:32 App is up to date.
+2026-08-31 07:00:52 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-31 07:00:52 Checking for update using Github
+2026-08-31 07:00:52 Success.
+2026-08-31 07:00:52 Latest version is 1.13.7
+2026-08-31 07:00:52 App is up to date.
+2026-08-31 07:01:00 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-31 07:01:11 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-31 07:01:17 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-08-31 07:01:18 Checking for update using Github
+2026-08-31 07:01:18 Success.
+2026-08-31 07:01:18 Latest version is 1.13.7
+2026-08-31 07:01:18 App is up to date.
+2026-08-31 08:01:17 Checking for update using Github
+2026-08-31 08:01:18 Success.
+2026-08-31 08:01:18 Latest version is 1.13.7
+2026-08-31 08:01:18 App is up to date.
+2026-08-31 09:01:17 Checking for update using Github
+2026-08-31 09:01:18 Success.
+2026-08-31 09:01:18 Latest version is 1.13.7
+2026-08-31 09:01:18 App is up to date.
+2026-08-31 10:01:18 Checking for update using Github
+2026-08-31 10:01:18 Success.
+2026-08-31 10:01:18 Latest version is 1.13.7
+2026-08-31 10:01:18 App is up to date.
+2026-09-01 06:36:49 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-01 06:36:49 Checking for update using Github
+2026-09-01 06:36:50 Success.
+2026-09-01 06:36:50 Latest version is 1.13.7
+2026-09-01 06:36:50 App is up to date.
+2026-09-01 07:36:49 Checking for update using Github
+2026-09-01 07:36:49 Success.
+2026-09-01 07:36:49 Latest version is 1.13.7
+2026-09-01 07:36:49 App is up to date.
+2026-09-01 08:36:49 Checking for update using Github
+2026-09-01 08:36:49 Success.
+2026-09-01 08:36:49 Latest version is 1.13.7
+2026-09-01 08:36:49 App is up to date.
+2026-09-01 09:36:49 Checking for update using Github
+2026-09-01 09:36:49 Success.
+2026-09-01 09:36:49 Latest version is 1.13.7
+2026-09-01 09:36:49 App is up to date.
+2026-09-01 10:00:22 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-01 10:00:28 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-01 10:37:37 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-01 10:37:37 Checking for update using Github
+2026-09-01 10:37:37 Success.
+2026-09-01 10:37:37 Latest version is 1.13.7
+2026-09-01 10:37:37 App is up to date.
+2026-09-02 09:35:59 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-02 09:35:59 Checking for update using Github
+2026-09-02 09:36:00 Success.
+2026-09-02 09:36:00 Latest version is 1.13.7
+2026-09-02 09:36:00 App is up to date.
+2026-09-02 10:35:59 Checking for update using Github
+2026-09-02 10:35:59 Success.
+2026-09-02 10:35:59 Latest version is 1.13.7
+2026-09-02 10:35:59 App is up to date.
+2026-09-02 11:35:59 Checking for update using Github
+2026-09-02 11:35:59 Success.
+2026-09-02 11:35:59 Latest version is 1.13.7
+2026-09-02 11:35:59 App is up to date.
+2026-09-02 12:35:59 Checking for update using Github
+2026-09-02 12:35:59 Success.
+2026-09-02 12:35:59 Latest version is 1.13.7
+2026-09-02 12:35:59 App is up to date.
+2026-09-02 13:35:59 Checking for update using Github
+2026-09-02 13:36:00 Success.
+2026-09-02 13:36:00 Latest version is 1.13.7
+2026-09-02 13:36:00 App is up to date.
+2026-09-02 14:35:59 Checking for update using Github
+2026-09-02 14:36:00 Success.
+2026-09-02 14:36:00 Latest version is 1.13.7
+2026-09-02 14:36:00 App is up to date.
+2026-09-02 15:36:00 Checking for update using Github
+2026-09-02 15:36:00 Success.
+2026-09-02 15:36:00 Latest version is 1.13.7
+2026-09-02 15:36:00 App is up to date.
+2026-09-07 05:49:20 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-07 05:49:20 Checking for update using Github
+2026-09-07 05:49:20 Success.
+2026-09-07 05:49:20 Latest version is 1.13.7
+2026-09-07 05:49:20 App is up to date.
+2026-09-07 06:49:20 Checking for update using Github
+2026-09-07 06:49:20 Success.
+2026-09-07 06:49:20 Latest version is 1.13.7
+2026-09-07 06:49:20 App is up to date.
+2026-09-07 07:49:20 Checking for update using Github
+2026-09-07 07:49:20 Success.
+2026-09-07 07:49:20 Latest version is 1.13.7
+2026-09-07 07:49:20 App is up to date.
+2026-09-07 09:12:15 Checking for update using Github
+2026-09-07 09:12:16 Success.
+2026-09-07 09:12:16 Latest version is 1.13.7
+2026-09-07 09:12:16 App is up to date.
+2026-09-07 10:12:16 Checking for update using Github
+2026-09-07 10:12:16 Success.
+2026-09-07 10:12:16 Latest version is 1.13.7
+2026-09-07 10:12:16 App is up to date.
+2026-09-07 11:12:16 Checking for update using Github
+2026-09-07 11:12:16 Success.
+2026-09-07 11:12:16 Latest version is 1.13.7
+2026-09-07 11:12:16 App is up to date.
+2026-09-07 12:12:16 Checking for update using Github
+2026-09-07 12:12:16 Success.
+2026-09-07 12:12:16 Latest version is 1.13.7
+2026-09-07 12:12:16 App is up to date.
+2026-09-11 07:27:15 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-11 07:27:15 Checking for update using Github
+2026-09-11 07:27:15 Success.
+2026-09-11 07:27:15 Latest version is 1.13.7
+2026-09-11 07:27:15 App is up to date.
+2026-09-14 09:21:00 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-23 07:19:52 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-23 07:19:52 Checking for update using Github
+2026-09-23 07:19:52 Success.
+2026-09-23 07:19:52 Latest version is 1.13.7
+2026-09-23 07:19:52 App is up to date.
+2026-09-24 07:19:47 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-24 07:19:48 Checking for update using Github
+2026-09-24 07:19:48 Success.
+2026-09-24 07:19:48 Latest version is 1.13.7
+2026-09-24 07:19:48 App is up to date.
+2026-09-24 07:20:54 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-24 07:44:28 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-24 07:44:28 Checking for update using Github
+2026-09-24 07:44:29 Success.
+2026-09-24 07:44:29 Latest version is 1.13.7
+2026-09-24 07:44:29 App is up to date.
+2026-09-24 08:44:28 Checking for update using Github
+2026-09-24 08:44:28 Success.
+2026-09-24 08:44:28 Latest version is 1.13.7
+2026-09-24 08:44:28 App is up to date.
+2026-09-28 11:56:10 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-28 11:56:10 Checking for update using Github
+2026-09-28 11:56:10 Success.
+2026-09-28 11:56:10 Latest version is 1.13.7
+2026-09-28 11:56:10 App is up to date.
+2026-09-28 11:56:49 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-28 11:56:49 Checking for update using Github
+2026-09-28 11:56:49 Success.
+2026-09-28 11:56:49 Latest version is 1.13.7
+2026-09-28 11:56:49 App is up to date.
+2026-09-28 13:23:31 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-28 13:23:31 Checking for update using Github
+2026-09-28 13:23:31 Success.
+2026-09-28 13:23:31 Latest version is 1.13.7
+2026-09-28 13:23:31 App is up to date.
+2026-09-28 13:23:38 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-28 13:23:38 Checking for update using Github
+2026-09-28 13:23:38 Success.
+2026-09-28 13:23:38 Latest version is 1.13.7
+2026-09-28 13:23:38 App is up to date.
+2026-09-28 13:26:20 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-28 14:23:38 Checking for update using Github
+2026-09-28 14:23:38 Success.
+2026-09-28 14:23:38 Latest version is 1.13.7
+2026-09-28 14:23:38 App is up to date.
+2026-09-28 15:23:38 Checking for update using Github
+2026-09-28 15:23:38 Success.
+2026-09-28 15:23:38 Latest version is 1.13.7
+2026-09-28 15:23:38 App is up to date.
+2026-09-29 08:25:22 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-29 08:25:22 Checking for update using Github
+2026-09-29 08:25:23 Success.
+2026-09-29 08:25:23 Latest version is 1.13.7
+2026-09-29 08:25:23 App is up to date.
+2026-09-29 09:25:22 Checking for update using Github
+2026-09-29 09:25:23 Success.
+2026-09-29 09:25:23 Latest version is 1.13.7
+2026-09-29 09:25:23 App is up to date.
+2026-09-29 09:50:39 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-29 09:51:11 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-29 09:51:11 Checking for update using Github
+2026-09-29 09:51:11 Success.
+2026-09-29 09:51:11 Latest version is 1.13.7
+2026-09-29 09:51:11 App is up to date.
+2026-09-29 09:51:44 Loaded updated app /home/nisc/.config/obsidian/obsidian-1.13.7.asar
+2026-09-29 09:51:44 Checking for update using Github
+2026-09-29 09:51:44 Success.
+2026-09-29 09:51:44 Latest version is 1.13.7
+2026-09-29 09:51:44 App is up to date.
+2026-09-29 10:51:44 Checking for update using Github
+2026-09-29 10:51:44 Success.
+2026-09-29 10:51:44 Latest version is 1.13.7
+2026-09-29 10:51:44 App is up to date.
+2026-09-29 11:51:44 Checking for update using Github
+2026-09-29 11:51:44 Success.
+2026-09-29 11:51:44 Latest version is 1.13.7
+2026-09-29 11:51:44 App is up to date.
+2026-09-29 12:51:44 Checking for update using Github
+2026-09-29 12:51:44 Success.
+2026-09-29 12:51:44 Latest version is 1.13.7
+2026-09-29 12:51:44 App is up to date.
+2026-09-29 13:51:44 Checking for update using Github
+2026-09-29 13:51:44 Success.
+2026-09-29 13:51:44 Latest version is 1.13.7
+2026-09-29 13:51:44 App is up to date.

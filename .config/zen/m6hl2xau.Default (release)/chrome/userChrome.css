@@ -1,0 +1,83 @@
+/* Matugen Zen Browser Theme */
+:root {
+  --zen-primary-color: #6a7097 !important;
+  --toolbarbutton-icon-fill: #bec4ef !important;
+  --toolbar-field-color: #e4e1e5 !important;
+  --tab-selected-textcolor: #bec4ef !important;
+  --toolbar-color: #e4e1e5 !important;
+  --arrowpanel-color: #e4e1e5 !important;
+  --arrowpanel-background: #1f1f22 !important;
+  --sidebar-text-color: #e4e1e5 !important;
+  --zen-main-browser-background: #131316 !important;
+  --zen-main-browser-background-toolbar: #131316 !important;
+}
+
+#zen-browser-background {
+  --zen-main-browser-background: #131316 !important;
+  --zen-background-opacity: 1 !important;
+}
+
+#zen-toolbar-background {
+  --zen-main-browser-background-toolbar: #131316 !important;
+  --zen-background-opacity: 1 !important;
+}
+
+.sidebar-placesTree {
+  background-color: #1f1f22 !important;
+}
+
+#zen-workspaces-button {
+  background-color: #1f1f22 !important;
+}
+
+#TabsToolbar {
+  background-color: #131316 !important;
+}
+
+.urlbar-background {
+  background-color: #1f1f22 !important;
+}
+
+.urlbar-input::selection {
+  color: #282e51 !important;
+  background-color: #bec4ef !important;
+}
+
+.urlbarView-url {
+  color: #c7c5cf !important;
+}
+
+toolbar .toolbarbutton-1 {
+  &:not([disabled]) {
+    &:is([open], [checked])
+      > :is(
+        .toolbarbutton-icon,
+        .toolbarbutton-text,
+        .toolbarbutton-badge-stack
+      ) {
+      fill: #bec4ef
+    }
+  }
+}
+
+#zen-appcontent-navbar-container {
+  background-color: #131316 !important;
+}
+
+#PanelUI-menu-button .toolbarbutton-icon,
+#downloads-button .toolbarbutton-icon,
+#unified-extensions-button .toolbarbutton-icon {
+  fill: #bec4ef !important;
+  color: #bec4ef !important;
+}
+
+#PanelUI-menu-button .toolbarbutton-badge-stack,
+#downloads-button .toolbarbutton-badge-stack,
+#unified-extensions-button .toolbarbutton-badge-stack {
+  fill: #bec4ef !important;
+  color: #bec4ef !important;
+}
+
+toolbar .toolbarbutton-1 > .toolbarbutton-icon {
+  fill: #bec4ef !important;
+}

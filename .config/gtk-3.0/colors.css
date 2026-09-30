@@ -1,0 +1,34 @@
+/* Redefinición de la paleta interna de Libadwaita */
+@define-color accent_color #bfc7d4;
+@define-color accent_bg_color #bfc7d4;
+@define-color accent_fg_color #29313b;
+
+/* Window y superficies */
+window, .background {
+    background-color: #131314 !important;
+    color: #e4e2e2 !important;
+}
+
+headerbar {
+    background-color: #1f1f20 !important;
+    color: #e4e2e2 !important;
+}
+
+/* Control de barras de volumen (GtkScale / GtkProgressBar) */
+scale highlight,
+scale trough highlight,
+progressbar progress {
+    background-color: #bfc7d4 !important;
+}
+
+scale slider,
+scale trough slider {
+    background-color: #ffffff !important;
+}
+
+/* Pestañas (Reproducción, Grabación, Dispositivos...) */
+tabbar tab:checked,
+stackswitcher button:checked {
+    background-color: #5b636e !important;
+    color: #ffffff !important;
+}

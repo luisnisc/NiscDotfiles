@@ -1,0 +1,222 @@
+{
+  "device_name": "Spotifast",
+  "bitrate": 320,
+  "normalisation": false,
+  "autoplay": true,
+  "gapless": true,
+  "audio_backend": null,
+  "audio_device": null,
+  "audio_buffer_ms": 100,
+  "audio_cache": true,
+  "audio_cache_mb": 1024,
+  "theme": "system",
+  "language": "system",
+  "custom_theme": "Matugen.json",
+  "custom_theme_cache": {
+    "filename": "Matugen.json",
+    "palette": {
+      "dark": true,
+      "window": [
+        19,
+        19,
+        22,
+        255
+      ],
+      "panel": [
+        19,
+        19,
+        22,
+        255
+      ],
+      "surface": [
+        31,
+        31,
+        34,
+        255
+      ],
+      "surface_hover": [
+        42,
+        42,
+        44,
+        255
+      ],
+      "surface_active": [
+        53,
+        52,
+        55,
+        255
+      ],
+      "outline": [
+        144,
+        144,
+        153,
+        255
+      ],
+      "text": [
+        228,
+        225,
+        229,
+        255
+      ],
+      "secondary": [
+        199,
+        197,
+        207,
+        255
+      ],
+      "dim": [
+        70,
+        70,
+        78,
+        255
+      ],
+      "accent": [
+        190,
+        196,
+        239,
+        255
+      ],
+      "accent_hover": [
+        106,
+        112,
+        151,
+        255
+      ],
+      "on_accent": [
+        40,
+        46,
+        81,
+        255
+      ],
+      "danger": [
+        255,
+        180,
+        171,
+        255
+      ],
+      "warning": [
+        221,
+        196,
+        134,
+        255
+      ],
+      "overlay": [
+        34,
+        39,
+        46,
+        255
+      ],
+      "shadow": [
+        0,
+        0,
+        0,
+        140
+      ]
+    }
+  },
+  "home": {
+    "made_for_you": {
+      "visible": true
+    },
+    "recommendations": {
+      "visible": true
+    }
+  },
+  "accent_from_art": true,
+  "player_bar_vis": "spectrum",
+  "volume": 45874,
+  "sidebar_visible": true,
+  "art_expanded": true,
+  "sidebar_compact": false,
+  "sidebar_grid": false,
+  "sidebar_width": 250.0,
+  "lyrics_width": 362.0,
+  "queue_width": 361.5,
+  "tracklist_compact": false,
+  "middle_click_autoscroll": false,
+  "search_history": [
+    "lagrimas deso",
+    "promise",
+    "prom",
+    "p",
+    "the unfor",
+    "yo minoria a",
+    "rmb",
+    "rm",
+    "yo minoria",
+    "dont cry",
+    "dont"
+  ],
+  "show_shortcut_hints": true,
+  "web_client_id": "2cc12c714ff845e28282aaacadb2ffde",
+  "personal_app_nudge_at": null,
+  "personal_app_intro_seen": true,
+  "playback_authorized": true,
+  "keep_playing_in_background": true,
+  "check_for_updates": true,
+  "download_updates_automatically": false,
+  "pinned_contexts": [
+    "spotifast:liked-songs"
+  ],
+  "liked_songs_pinned": true,
+  "sidebar_order": [
+    "spotify:playlist:1TSOL3fMImTyLBTtDp2RPB",
+    "spotify:playlist:69ym1MHmovbdRK8ejS9HpI",
+    "spotify:playlist:4n9LESscWEF9WNUpSuttks",
+    "spotify:playlist:4zZpffTnguBELBde2Ar30Z",
+    "spotify:playlist:7wZDUB2dRFQAMHgPD9KxHT",
+    "spotify:playlist:34lvsGHOI1oUAESLIRmwOf",
+    "spotify:playlist:37i9dQZF1E8NLq4DFJf8bw",
+    "spotify:playlist:37i9dQZEVXcXHWVVT0lfDq",
+    "spotify:playlist:64WOP22TiaWcqY0EBIKZBq",
+    "spotify:playlist:0a0jDFfTeUJEv2Pz0b1lLy",
+    "spotify:playlist:37i9dQZF1EYkqdzj48dyYq",
+    "spotify:playlist:2FjEhh4kZ6tMy0SjLyywjg",
+    "spotify:playlist:2jnd8AessPIdbR83qFMFWb",
+    "spotify:playlist:3kSv0nH7ITbxsKALP7xbRt"
+  ],
+  "library_sort": {
+    "playlists": "local"
+  },
+  "zoom": 1.0,
+  "winamp_window": false,
+  "winamp_show_taskbar": true,
+  "custom_titlebar": false,
+  "skin": null,
+  "random_skin": false,
+  "skin_scale": null,
+  "winamp_on_top": false,
+  "vis": "bars",
+  "playlist_open": true,
+  "playlist_height": 174,
+  "eq_open": false,
+  "eq_on": true,
+  "eq_preamp_db": 0.0,
+  "eq_bands_db": [
+    8.0,
+    4.8,
+    -5.6,
+    -8.0,
+    -3.2,
+    4.0,
+    8.8,
+    11.2,
+    11.2,
+    11.2
+  ],
+  "balance": 0.0,
+  "mono": false,
+  "playlist_shaded": false,
+  "eq_shaded": false,
+  "winamp_shaded": false,
+  "milkdrop_open": false,
+  "milkdrop_seconds": 10,
+  "milkdrop_fps": 60,
+  "milkdrop_screen_hz": 60,
+  "milkdrop_scale": 1,
+  "milkdrop_fullscreen": false,
+  "milkdrop_size": [
+    1600.0,
+    1000.0
+  ]
+}

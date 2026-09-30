@@ -104,6 +104,7 @@ hl.bind(vars.kbSpecialNotes, hl.dsp.workspace.toggle_special("notes"))
 hl.bind(vars.kbSpecialMedia, hl.dsp.workspace.toggle_special("media"))
 hl.bind(vars.kbSpecialAnime, hl.dsp.workspace.toggle_special("anime"))
 hl.bind(vars.kbSpecialSocial, hl.dsp.workspace.toggle_special("social"))
+hl.bind(vars.kbSpecialVirtualMachine, hl.dsp.workspace.toggle_special("virtualMachine"))
 
 hl.bind(vars.kbNextSong, hl.dsp.exec_cmd("playerctl next"))
 hl.bind(vars.kbPreviousSong, hl.dsp.exec_cmd("playerctl previous"))
