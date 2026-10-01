@@ -130,4 +130,4 @@ hl.bind("SUPER + 2", function()
 	hl.plugin.gloview.setworkspace(2)
 end)
 
-hl.bind("SUPER + ALT + RETURN", hl.dsp.exec_cmd("kitty lazydocker &"))
+hl.bind("SUPER + ALT + RETURN", hl.dsp.exec_cmd("kitty tmux &"))

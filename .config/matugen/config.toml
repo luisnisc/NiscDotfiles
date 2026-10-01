@@ -48,6 +48,10 @@ output_path = "~/Documents/Obsidian/Nisc/.obsidian/snippets/obsidian.css"
 input_path = "~/.config/matugen/templates/zen-userchrome.css"
 output_path = "/home/nisc/.config/zen/m6hl2xau.Default (release)/chrome/userChrome.css"
 
+[templates.zen-browserUsercontent]
+input_path = "~/.config/matugen/templates/zen-usercontent.css"
+output_path = "/home/nisc/.config/zen/m6hl2xau.Default (release)/chrome/userContent.css"
+
 [templates.spicetify]
 input_path = "~/.config/matugen/templates/colors.ini"
 output_path = "/home/nisc/.config/spicetify/Themes/Sleek/color.ini"
