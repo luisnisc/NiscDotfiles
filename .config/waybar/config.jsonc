@@ -5,7 +5,8 @@
     "height": 38,
     "spacing": 4,
     "modules-left": [
-      "hyprland/workspaces"
+      "hyprland/workspaces",
+      "custom/obsidian"
     ],
     "modules-center": [
       "clock",
@@ -75,13 +76,13 @@
       "format": "󰥔 {:%H:%M  %d/%m}",
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
       "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.workspace.toggle_special(\"calendar\"))'",
-      "on-click-right": "hyprctl eval 'hl.exec_cmd(\"gnome-calendar\")'",
+      "on-click-right": "hyprctl eval 'hl.exec_cmd(\"gnome-calendar\")'"
     },
     "cpu": {
       "format": " {usage}%",
       "interval": 2,
       "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.workspace.toggle_special(\"btop\"))'",
-      "on-click-right": "hyprctl eval 'hl.exec_cmd(\"kitty --class btop -e btop\")'",
+      "on-click-right": "hyprctl eval 'hl.exec_cmd(\"kitty --class btop -e btop\")'"
     },
     "memory": {
       "format": " {percentage}%",
@@ -117,7 +118,7 @@
       "exec": "~/.config/waybar/scripts/gpu-temp.sh",
       "return-type": "json",
       "interval": 3,
-      "tooltip": true,
+      "tooltip": true
     },
     "custom/mediaplayer": {
       "exec": "~/.config/waybar/scripts/mediaplayer.sh",
@@ -138,7 +139,7 @@
         ]
       },
       "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.workspace.toggle_special(\"pulseaudio\"))'",
-      "on-click-right": "hyprctl eval 'hl.exec_cmd(\"pavucontrol\")'",
+      "on-click-right": "hyprctl eval 'hl.exec_cmd(\"pavucontrol\")'"
     },
     "bluetooth": {
       "format": "",
@@ -158,5 +159,11 @@
       "tooltip-format": "{ifname} via {gwaddr}",
       "on-click": "kitty --class nmtui-float -o include=matugen-theme.conf -e nmtui"
     },
-  },
+    "custom/obsidian": {
+      "exec": "~/.local/bin/obsidian-status",
+      "return-type": "json",
+      "format": "{}",
+      "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.workspace.toggle_special(\"notes\"))'"
+    }
+  }
 ]
