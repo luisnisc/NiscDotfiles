@@ -163,7 +163,8 @@
       "exec": "~/.local/bin/obsidian-status",
       "return-type": "json",
       "format": "{}",
-      "on-click": "bash -c 'hyprctl eval \"hl.dispatch(hl.dsp.workspace.toggle_special(\\\"notes\\\"))\" || xdg-open \"obsidian://open?vault=Nisc&file=00_Diario%2F$(date +%Y-%m-%d).md\"'"
+      "tooltip": true,
+      "on-click": "bash -c 'hyprctl eval \"hl.dispatch(hl.dsp.workspace.toggle_special(\\\"notes\\\"))\" && xdg-open \"obsidian://open?vault=Nisc&file=00_Diario%2F$(date +%Y-%m-%d).md\"'"
     }
   }
 ]

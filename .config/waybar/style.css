@@ -104,4 +104,13 @@ window#waybar {
     background-color: @primary;
 }
 
+tooltip {
+    background: alpha(@background-alt, 0.95);
+    border: 1px solid alpha(@border, 0.5);
+    border-radius: 8px;
+}
 
+tooltip label {
+    color: @foreground;
+    padding: 6px 10px;
+}
