@@ -131,3 +131,6 @@ hl.bind("SUPER + 2", function()
 end)
 
 hl.bind("SUPER + ALT + RETURN", hl.dsp.exec_cmd("kitty tmux &"))
+
+hl.bind(mainMod .. "+ U", hl.dsp.exec_cmd("./.local/bin/diskman"))
+hl.bind(mainMod .. "+ ALT + U", hl.dsp.exec_cmd("nautilus --new-window /run/media/$USER/"))
