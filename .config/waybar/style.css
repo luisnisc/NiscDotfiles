@@ -30,7 +30,8 @@ window#waybar {
 #custom-notification,
 #upower,
 #custom-mediaplayer,
-#custom-obsidian{
+#custom-obsidian,
+#custom-diskman{
     background-color: alpha(@background-alt, 0.85);
     padding: 4px 12px;
     margin: 6px 3px;
@@ -66,7 +67,8 @@ window#waybar {
 #idle_inhibitor,
 #upower,
 #battery,
-#custom-obsidian{
+#custom-obsidian,
+#custom-diskman{
     color: @primary;
 }
 

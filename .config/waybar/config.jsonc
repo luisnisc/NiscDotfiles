@@ -6,7 +6,8 @@
     "spacing": 4,
     "modules-left": [
       "hyprland/workspaces",
-      "custom/obsidian"
+      "custom/obsidian",
+      "custom/diskman"
     ],
     "modules-center": [
       "clock",
@@ -165,6 +166,13 @@
       "format": "{}",
       "tooltip": true,
       "on-click": "bash -c 'hyprctl eval \"hl.dispatch(hl.dsp.workspace.toggle_special(\\\"notes\\\"))\" && xdg-open \"obsidian://open?vault=Nisc&file=00_Diario%2F$(date +%Y-%m-%d).md\"'"
+    },
+    "custom/diskman": {
+      "exec": "~/.local/bin/diskman --waybar",
+      "return-type": "json",
+      "interval": 3,
+      "format": "{}",
+      "on-click": "~/.local/bin/diskman"
     }
   }
 ]
