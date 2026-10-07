@@ -1,0 +1,12 @@
+[Unit]
+Description=Tmux Autonomous Server (Daemon)
+Documentation=man:tmux(1)
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/tmux new-session -d
+ExecStop=/usr/bin/tmux kill-server
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
