@@ -97,6 +97,8 @@ hl.window_rule({ match = { class = "cs2" }, immediate = true })
 
 hl.window_rule({ match = { title = "btop" }, float = true })
 
+hl.window_rule({ match = { title = "tmux" }, opaque = true })
+
 ------
 --- Dashboard Workspace 3
 ------

@@ -1,3 +1,2 @@
 local vars = require("variables")
-
-local mainMod = "SUPER"
+local mainMod = vars.mainMod

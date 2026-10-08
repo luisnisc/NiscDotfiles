@@ -3,6 +3,66 @@ local vars = require("variables")
 local mainMod = vars.mainMod
 local browser = vars.browser
 
+-- ==========================================================
+-- 1. CONFIGURACIÓN DEL LAYOUT SCROLLING (Solo Workspace 2)
+-- ==========================================================
+hl.workspace_rule({ workspace = "2", layout = "scrolling", layout_opts = { direction = "right" } })
+
+hl.config({
+	scrolling = {
+		column_width = 0.5,
+		focus_fit_method = 0,
+		follow_focus = true,
+		follow_min_visible = 0.4,
+		explicit_column_widths = "0.333, 0.5, 0.667, 1.0",
+		wrap_focus = true,
+		wrap_swapcol = true,
+	},
+})
+
+hl.bind("ALT + S", hl.dsp.submap("scroll"))
+
+hl.define_submap("scroll", function()
+	-- 1. Navegar por la cinta (Mover el layout entero)
+	hl.bind("right", hl.dsp.layout("move +col"), { repeating = true })
+	hl.bind("left", hl.dsp.layout("move -col"), { repeating = true })
+
+	-- 2. Intercambiar columnas de lugar (Swap)
+	hl.bind("SHIFT + right", hl.dsp.layout("swapcol r"))
+	hl.bind("SHIFT + left", hl.dsp.layout("swapcol l"))
+
+	-- 3. Redimensionar usando tus 'explicit_column_widths' (0.333, 0.5, 0.667, 1.0)
+	hl.bind("up", hl.dsp.layout("colresize +conf"))
+	hl.bind("down", hl.dsp.layout("colresize -conf"))
+
+	-- Si prefieres redimensionado libre relativo en lugar de predefinido:
+	hl.bind("SHIFT + up", hl.dsp.layout("colresize +0.1"), { repeating = true })
+	hl.bind("SHIFT + down", hl.dsp.layout("colresize -0.1"), { repeating = true })
+
+	-- 4. Gestión de Ventanas en las Columnas (Potencial real del layout)
+	-- 'consume': Mete la ventana actual en la columna de la ventana anterior (hace un split vertical)
+	hl.bind("I", hl.dsp.layout("consume"))
+	-- 'expel': Saca la ventana de la columna compartida y le crea su propia columna nueva
+	hl.bind("O", hl.dsp.layout("expel"))
+
+	-- 5. Control de la vista
+	-- 'center': Centra la columna enfocada en medio de la pantalla
+	hl.bind("C", hl.dsp.layout("center"))
+	-- 'fit_into_view': Ajusta la columna para que se vea perfectamente en el monitor
+	hl.bind("F", hl.dsp.layout("fit_into_view"))
+
+	-- 6. Bloqueo del Scroll (Inhibit)
+	-- Útil si tienes varias columnas pero no quieres que la vista se deslice automáticamente
+	-- al cambiar el foco temporalmente.
+	hl.bind("B", hl.dsp.layout("inhibit_scroll"))
+
+	-- Salir del modo scroll
+	hl.bind("escape", hl.dsp.submap("reset"))
+	hl.bind("return", hl.dsp.submap("reset"))
+end)
+-- ==========================================================
+-- 2. TUS KEYBINDS ORIGINALES (Intactos)
+-- ==========================================================
 hl.bind(mainMod .. "+ RETURN", hl.dsp.exec_cmd(vars.terminal), { submap_universal = true })
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(vars.fileManager))
@@ -88,15 +148,11 @@ hl.bind(vars.kbCrunchyroll, hl.dsp.exec_cmd(vars.crunchyroll))
 hl.bind(vars.kbYoutube, hl.dsp.exec_cmd(vars.youtube))
 
 hl.bind(vars.kbDiscord, hl.dsp.exec_cmd("discord"))
--- hl.bind(vars.kbSpecialMusic, hl.dsp.exec_cmd("spotify"))
 hl.bind(vars.kbSpecialMusic, hl.dsp.exec_cmd("spotifast"))
 hl.bind(mainMod .. "+ C", hl.dsp.exec_cmd("kitty --class nvim -e nvim &"))
 hl.bind(vars.kbNotes, hl.dsp.exec_cmd(vars.notes))
 
-hl.bind(
-	vars.kbScreenshot,
-	hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy && notify-send "Captura" "Selección copiada al portapapeles"')
-)
+hl.bind(vars.kbScreenshot, hl.dsp.exec_cmd("./.local/bin/hyprshot-menu"))
 
 hl.bind(vars.kbSpecialCode, hl.dsp.workspace.toggle_special("code"))
 hl.bind(vars.kbSpecialMusic, hl.dsp.workspace.toggle_special("music"))

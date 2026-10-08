@@ -1,6 +1,6 @@
 return {
 	terminal = "kitty",
-	fileManager = "nemo",
+	fileManager = "nautilus --new-window",
 	menu = "rofi -show drun",
 	mainMod = "SUPER",
 	browser = "zen-browser",

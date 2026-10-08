@@ -7,7 +7,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
 	hl.exec_cmd("fcitx5 -d")
 	hl.exec_cmd("swaync")
-	hl.exec_cmd(". ~/.config/scripts/hypr_dashboard.sh")
+	-- hl.exec_cmd(". ~/.config/scripts/hypr_dashboard.sh")
 	hl.exec_cmd("wl-paste --type text --watch cliphist store")
 	hl.exec_cmd("wl-paste --type image --watch cliphist store")
 	hl.exec_cmd("hypridle")
@@ -15,6 +15,7 @@ hl.on("hyprland.start", function()
 	-- hl.exec_cmd("spicetify watch -s &")
 	hl.exec_cmd("spotifast &")
 	hl.exec_cmd("hyprpm reload")
+	hl.exec_cmd("tmux new-session -d")
 end)
 
 ------------------
@@ -31,7 +32,7 @@ hl.monitor({
 hl.monitor({
 	output = "HDMI-A-1",
 	mode = "1920x1080@60",
-	position = "0x0",
+	position = "1920x0",
 	scale = "auto",
 })
 
