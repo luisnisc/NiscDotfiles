@@ -72,3 +72,8 @@ post_hook = "pkill -SIGUSR1 nvim"
 [templates.spotifast]
 input_path = "~/.config/matugen/templates/spotifast.json"
 output_path = "~/.config/spotifast/themes/Matugen.json"
+
+[templates.ags_powermenu]
+input_path = '~/.config/matugen/templates/powermenu.scss'
+output_path = '~/.config/ags/style.scss'
+post_hook = 'ags request "reload-css"'

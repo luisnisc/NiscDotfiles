@@ -11,7 +11,8 @@
     "modules-left": [
       "hyprland/workspaces",
       "custom/obsidian",
-      "custom/diskman"
+      "custom/diskman",
+      "custom/updates"
     ],
     "modules-center": [
       "clock",
@@ -177,6 +178,14 @@
       "interval": 3,
       "format": "{}",
       "on-click": "~/.local/bin/diskman &"
+    },
+    "custom/updates": {
+      "exec": "~/.local/bin/update-lens --waybar",
+      "return-type": "json",
+      "interval": 3600,
+      "format": "{}",
+      "on-click": "kitty --class update-term -e paru -Syu",
+      "on-click-right": "~/.local/bin/update-lens --rofi"
     }
   },
   {
@@ -262,6 +271,6 @@
       "on-click": "sh -c 'sleep 0.1 && swaync-client -t -sw' &",
       "on-click-right": "sh -c 'sleep 0.1 && swaync-client -d -sw' &",
       "escape": true
-    }
+    },
   }
 ]

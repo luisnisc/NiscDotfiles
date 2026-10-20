@@ -123,6 +123,23 @@ hl.config({
 	},
 })
 
+hl.config({
+	decoration = {
+		blur = {
+			enabled = true,
+			size = 9,
+			passes = 3,
+			new_optimizations = true,
+			ignore_opacity = true,
+			noise = 0.01,
+			contrast = 1.25, -- Realza el volumen de las montañas y sombras tras la barra
+			brightness = 0.82, -- Oscurece ligeramente el fondo para mantener legibilidad
+			vibrancy = 0.50, -- Hace que el rojo carmesí resalte con fuerza bajo la barra
+			vibrancy_darkness = 0.3,
+		},
+	},
+})
+
 -- See https://wiki.hypr.land/Configuring/Layouts/Scrolling-Layout/ for more
 -- hl.config({
 -- 	scrolling = {
@@ -151,5 +168,28 @@ require("hyprland.general")
 require("hyprland.group")
 require("hyprland.input")
 require("hyprland.misc")
-require("hyprland.rules")
 require("hyprland.workspaceRules")
+
+hl.workspace_rule({
+	workspace = "m[DP-10]",
+	layout = "scrolling",
+	layout_opts = { direction = "right" },
+})
+require("hyprland.rules")
+
+hl.config({
+	general = {
+		layout = "dwindle",
+	},
+	scrolling = {
+		column_width = 0.5,
+		focus_fit_method = 0,
+		follow_focus = true,
+		follow_min_visible = 0.4,
+		explicit_column_widths = "0.333, 0.5, 0.667, 1.0",
+		wrap_focus = true,
+		wrap_swapcol = true,
+	},
+})
+
+hl.layer_rule({ match = { namespace = "waybar" }, blur = true })

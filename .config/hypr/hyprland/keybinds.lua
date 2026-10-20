@@ -4,78 +4,47 @@ local mainMod = vars.mainMod
 local browser = vars.browser
 
 -- ==========================================================
--- 1. CONFIGURACIÓN DEL LAYOUT SCROLLING (Solo Workspace 2)
+-- 1. SCROLLING LAYOUT - NAVEGACIÓN Y CONTROL
 -- ==========================================================
-hl.workspace_rule({ workspace = "2", layout = "scrolling", layout_opts = { direction = "right" } })
 
-hl.config({
-	scrolling = {
-		column_width = 0.5,
-		focus_fit_method = 0,
-		follow_focus = true,
-		follow_min_visible = 0.4,
-		explicit_column_widths = "0.333, 0.5, 0.667, 1.0",
-		wrap_focus = true,
-		wrap_swapcol = true,
-	},
-})
+-- Foco horizontal por la cinta y vertical entre ventanas apiladas
 
-hl.bind("ALT + S", hl.dsp.submap("scroll"))
+hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
+hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
 
-hl.define_submap("scroll", function()
-	-- 1. Navegar por la cinta (Mover el layout entero)
-	hl.bind("right", hl.dsp.layout("move +col"), { repeating = true })
-	hl.bind("left", hl.dsp.layout("move -col"), { repeating = true })
+-- Desplazar la vista del layout sin cambiar el foco activo (mover cámara)
 
-	-- 2. Intercambiar columnas de lugar (Swap)
-	hl.bind("SHIFT + right", hl.dsp.layout("swapcol r"))
-	hl.bind("SHIFT + left", hl.dsp.layout("swapcol l"))
+-- Reordenar columnas (Swap)
+-- hl.bind(mainMod .. " + SHIFT + left", hl.dsp.layout("swapcol l"))
+-- hl.bind(mainMod .. " + SHIFT + right", hl.dsp.layout("swapcol r"))
 
-	-- 3. Redimensionar usando tus 'explicit_column_widths' (0.333, 0.5, 0.667, 1.0)
-	hl.bind("up", hl.dsp.layout("colresize +conf"))
-	hl.bind("down", hl.dsp.layout("colresize -conf"))
+-- Redimensionado de columnas: ciclo rápido por presets (+conf) o ajuste fino (+0.05)
+hl.bind(mainMod .. " + SHIFT + up", hl.dsp.layout("colresize +conf"))
+hl.bind(mainMod .. " + SHIFT + down", hl.dsp.layout("colresize -conf"))
+hl.bind(mainMod .. " + CTRL + up", hl.dsp.layout("colresize +0.05"), { repeating = true })
+hl.bind(mainMod .. " + CTRL + down", hl.dsp.layout("colresize -0.05"), { repeating = true })
 
-	-- Si prefieres redimensionado libre relativo en lugar de predefinido:
-	hl.bind("SHIFT + up", hl.dsp.layout("colresize +0.1"), { repeating = true })
-	hl.bind("SHIFT + down", hl.dsp.layout("colresize -0.1"), { repeating = true })
+-- Gestión de pilas dentro de columnas (Consume/Expel)
+hl.bind(mainMod .. " + SHIFT + I", hl.dsp.layout("consume"))
+hl.bind(mainMod .. " + SHIFT + O", hl.dsp.layout("expel"))
 
-	-- 4. Gestión de Ventanas en las Columnas (Potencial real del layout)
-	-- 'consume': Mete la ventana actual en la columna de la ventana anterior (hace un split vertical)
-	hl.bind("I", hl.dsp.layout("consume"))
-	-- 'expel': Saca la ventana de la columna compartida y le crea su propia columna nueva
-	hl.bind("O", hl.dsp.layout("expel"))
+-- Ajuste de vista
+hl.bind(mainMod .. " + SHIFT + F", hl.dsp.layout("fit_into_view"))
+hl.bind(mainMod .. " + SHIFT + C", hl.dsp.layout("center"))
 
-	-- 5. Control de la vista
-	-- 'center': Centra la columna enfocada en medio de la pantalla
-	hl.bind("C", hl.dsp.layout("center"))
-	-- 'fit_into_view': Ajusta la columna para que se vea perfectamente en el monitor
-	hl.bind("F", hl.dsp.layout("fit_into_view"))
-
-	-- 6. Bloqueo del Scroll (Inhibit)
-	-- Útil si tienes varias columnas pero no quieres que la vista se deslice automáticamente
-	-- al cambiar el foco temporalmente.
-	hl.bind("B", hl.dsp.layout("inhibit_scroll"))
-
-	-- Salir del modo scroll
-	hl.bind("escape", hl.dsp.submap("reset"))
-	hl.bind("return", hl.dsp.submap("reset"))
-end)
 -- ==========================================================
 -- 2. TUS KEYBINDS ORIGINALES (Intactos)
 -- ==========================================================
-hl.bind(mainMod .. "+ RETURN", hl.dsp.exec_cmd(vars.terminal), { submap_universal = true })
-hl.bind(mainMod .. " + Q", hl.dsp.window.close())
+hl.bind(mainMod .. "+ RETURN", hl.dsp.exec_cmd(vars.terminal), { submap_universal = true, repeating = true })
+hl.bind(mainMod .. " + Q", hl.dsp.window.close(), { repeating = true })
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(vars.fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind("CTRL + ALT + RETURN", hl.dsp.exec_cmd(vars.menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
-
-hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
 
 hl.bind("SUPER + SHIFT + LEFT", hl.dsp.workspace.move({ monitor = "l" }))
 hl.bind("SUPER + SHIFT + RIGHT", hl.dsp.workspace.move({ monitor = "r" }))
@@ -105,6 +74,7 @@ hl.define_submap("resize", function()
 	hl.bind("escape", hl.dsp.submap("reset"))
 end)
 
+-- Movimiento de ventanas clásico (Fallback direccional)
 hl.bind(mainMod .. " + ALT + up", hl.dsp.window.move({ direction = "up" }))
 hl.bind(mainMod .. " + ALT + down", hl.dsp.window.move({ direction = "down" }))
 hl.bind(mainMod .. " + ALT + left", hl.dsp.window.move({ direction = "left" }))
@@ -176,15 +146,15 @@ hl.bind(mainMod .. "+ PERIOD", hl.dsp.exec_cmd(vars.emojiPicker))
 hl.bind(mainMod .. "+ SHIFT + C", hl.dsp.exec_cmd(vars.colorPicker))
 hl.bind(mainMod .. "+ ALT + V", hl.dsp.exec_cmd(vars.clipboardHistory))
 
-hl.bind("SUPER + TAB", hl.plugin.gloview.toggle)
-hl.bind("SUPER + SHIFT + TAB", hl.plugin.gloview.desktop)
-hl.bind("SUPER + CTRL + TAB", hl.plugin.gloview.allworkspaces)
-
-hl.bind("SUPER + bracketright", hl.plugin.gloview.next)
-hl.bind("SUPER + bracketleft", hl.plugin.gloview.prev)
-hl.bind("SUPER + 2", function()
-	hl.plugin.gloview.setworkspace(2)
-end)
+-- hl.bind("SUPER + TAB", hl.plugin.gloview.toggle)
+-- hl.bind("SUPER + SHIFT + TAB", hl.plugin.gloview.desktop)
+-- hl.bind("SUPER + CTRL + TAB", hl.plugin.gloview.allworkspaces)
+--
+-- hl.bind("SUPER + bracketright", hl.plugin.gloview.next)
+-- hl.bind("SUPER + bracketleft", hl.plugin.gloview.prev)
+-- hl.bind("SUPER + 2", function()
+-- 	hl.plugin.gloview.setworkspace(2)
+-- end)
 
 hl.bind("SUPER + ALT + RETURN", hl.dsp.exec_cmd("./.local/bin/tmux-rofi.sh"))
 

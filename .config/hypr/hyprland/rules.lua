@@ -161,5 +161,20 @@ hl.layer_rule({
 })
 
 ------
---- Workspace Rules
+--- Scrolling Rules
 ------
+
+hl.window_rule({
+	match = { class = "zen" },
+	scrolling_width = 0.5,
+})
+
+hl.window_rule({
+	match = { class = "tmux-RustDevelopment" },
+	scrolling_width = 1,
+})
+
+hl.window_rule({
+	match = { class = "nvim" },
+	scrolling_width = 1,
+})

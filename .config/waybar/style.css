@@ -31,7 +31,8 @@ window#waybar {
 #upower,
 #custom-mediaplayer,
 #custom-obsidian,
-#custom-diskman{
+#custom-diskman,
+#custom-updates{
     background-color: alpha(@background-alt, 0.85);
     padding: 4px 12px;
     margin: 6px 3px;
@@ -68,7 +69,8 @@ window#waybar {
 #upower,
 #battery,
 #custom-obsidian,
-#custom-diskman{
+#custom-diskman,
+#custom-updates{
     color: @primary;
 }
 
