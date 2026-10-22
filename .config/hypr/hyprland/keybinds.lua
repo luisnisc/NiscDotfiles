@@ -160,3 +160,5 @@ hl.bind("SUPER + ALT + RETURN", hl.dsp.exec_cmd("./.local/bin/tmux-rofi.sh"))
 
 hl.bind(mainMod .. "+ U", hl.dsp.exec_cmd("./.local/bin/diskman"))
 hl.bind(mainMod .. "+ ALT + U", hl.dsp.exec_cmd("nautilus --new-window /run/media/$USER/"))
+
+hl.bind(mainMod .. "+ CTRL + U", hl.dsp.focus({ urgent_or_last = true }))

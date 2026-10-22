@@ -177,7 +177,8 @@
       "return-type": "json",
       "interval": 3,
       "format": "{}",
-      "on-click": "~/.local/bin/diskman &"
+      "on-click": "~/.local/bin/diskman &",
+      "on-click-right": "~/.local/bin/diskman --flash &"
     },
     "custom/updates": {
       "exec": "~/.local/bin/update-lens --waybar",
