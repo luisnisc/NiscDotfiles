@@ -59,6 +59,7 @@ window#waybar {
 
 /* --- COLORES DE MÓDULOS DEL SISTEMA --- */
 #cpu,
+#workspaces,
 #memory,
 #pulseaudio,
 #clock,

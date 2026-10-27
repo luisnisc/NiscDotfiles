@@ -62,8 +62,9 @@
     },
     "hyprland/workspaces": {
       "format": "{icon}",
-      "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.focus({ workspace = \"{name}\" }))'",
+      "on-click": "hyprctl dispatch workspace {name}",
       "all-outputs": true,
+      "tooltip": false,
       "persistent-workspaces": {
         "*": 9
       },
@@ -135,7 +136,7 @@
       "return-type": "json",
       "format": "{}",
       "on-click": "playerctl play-pause &",
-      "on-click-right": "playerctl next &",
+      "on-click-right": "hyprctl eval 'hl.dispatch(hl.dsp.workspace.toggle_special(\"music\"))'",
       "escape": false
     },
     "pulseaudio": {
@@ -219,12 +220,12 @@
         "*": 6
       },
       "format-icons": {
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4",
-        "5": "5",
-        "6": "6",
+        "1": "一",
+        "2": "二",
+        "3": "三",
+        "4": "四",
+        "5": "五",
+        "6": "六",
         "urgent": "",
         "default": ""
       }
